@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flight, Bus & Car Booking | UCS World Tour and Travels - Affordable Travel Services in India</title>
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="src/css/bootstrap-override.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="src/css/app.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section class="hero" id="hero" aria-label="Hero Section">
+        <div class="container position-relative z-index-1">
+            <div class="text-center">
+                <h1 class="hero-title">Discover Your World</h1>
+                <p class="hero-description">Discover amzaing places at exclusive deals</p>
+            </div>
+            <div class="discover-world-module">
+                <ul class="nav nav-pills level-1 w-100 d-flex justify-content-center theme-danger" id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-flight-tab" data-bs-toggle="tab"
+                            data-bs-target="#pills-flight" type="button" role="tab" aria-controls="pills-flight"
+                            aria-selected="true">
+                            <i class="fa-solid fa-plane-up"></i>
+                            <span>Flight</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-bus-tab" data-bs-toggle="tab" data-bs-target="#pills-bus"
+                            type="button" role="tab" aria-controls="pills-bus" aria-selected="false" tabindex="-1">
+                            <i class="fa-solid fa-bus"></i>
+                            <span>Bus</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-car-tab" data-bs-toggle="tab" data-bs-target="#pills-car"
+                            type="button" role="tab" aria-controls="pills-car" aria-selected="false" tabindex="-1">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Car</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-holiday-tab" data-bs-toggle="tab"
+                            data-bs-target="#pills-holiday" type="button" role="tab" aria-controls="pills-holiday"
+                            aria-selected="false" tabindex="-1">
+                            <i class="fa-solid fa-bed"></i>
+                            <span>Holiday</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content bg-white" id="pills-level-1-content">
+                    <div class="tab-pane show active" id="pills-flight" role="tabpanel"
+                        aria-labelledby="pills-flight-tab" tabindex="0">
+                        <ul class="nav nav-pills level-2 theme-primary" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-oneway-tab" data-bs-toggle="tab"
+                                    data-bs-target="#pills-oneway" type="button" role="tab" aria-controls="pills-oneway"
+                                    aria-selected="false" tabindex="-1">Oneway</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-round-tab" data-bs-toggle="tab"
+                                    data-bs-target="#pills-round" type="button" role="tab" aria-controls="pills-round"
+                                    aria-selected="false" tabindex="-1">Round</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-multicity-tab" data-bs-toggle="tab"
+                                    data-bs-target="#pills-multicity" type="button" role="tab"
+                                    aria-controls="pills-multicity" aria-selected="true">Multicity</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-level-2-content">
+                            <div class="tab-pane" id="pills-oneway" role="tabpanel" aria-labelledby="pills-oneway-tab"
+                                tabindex="0">
+                                <form action="" method="">
+                                    <div class="d-flex align-items-center fields">
+                                        <div class="field">
+                                            <label for="oneway-from" class="form-label">From</label>
+                                            <input type="text" class="form-control" id="oneway-from"
+                                                placeholder="City or Airport" aria-label="City or Airport"
+                                                name="oneway-from">
+                                        </div>
+                                        <button type="button" class="btn btn-swap">
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </button>
+                                        <div class="field">
+                                            <label for="oneway-to" class="form-label">To</label>
+                                            <input type="text" class="form-control" id="oneway-to"
+                                                placeholder="City or Airport" aria-label="City or Airport"
+                                                name="oneway-to">
+                                        </div>
+                                        <div class="field">
+                                            <label for="oneway-depart" class="form-label">Depart</label>
+                                            <input type="text" class="datepicker form-control" id="oneway-depart"
+                                                aria-label="Depart" name="oneway-depart" placeholder="DD/MM/YY">
+                                        </div>
+                                        <div class="field">
+                                            <label for="oneway-travellers-class" class="form-label">Travellers &amp;
+                                                Class</label>
+                                            <span class="selected-options" id="oneway-selected-options">1
+                                                Passenger</span>
+                                            <div class="counter-widget" id="counter-widget">
+                                                <div class="row justify-between items-center">
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Adults</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="oneway-audult-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="oneway-audult-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="oneway-audult-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Children</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="oneway-children-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="oneway-children-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="oneway-children-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-between items-center">
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+
+                                                            <div class="col-auto">
+                                                                <label>Infrants</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="oneway-infrants-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="oneway-infrants-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="oneway-infrants-inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label for="oneway-cabin-class">Cabin Class</label>
+                                                                <select name="oneway-cabin-class" class="form-control"
+                                                                    id="oneway-cabin-class">
+                                                                    <option value="economy">Economy</option>
+                                                                    <option value="premium-economy">Premium Economy
+                                                                    </option>
+                                                                    <option value="business">Business</option>
+                                                                    <option value="first-class">First Class</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-solid btn-search">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            Search
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="pills-round" role="tabpanel" aria-labelledby="pills-round-tab"
+                                tabindex="0">
+                                <form action="" method="">
+                                    <div class="d-flex align-items-center fields">
+                                        <div class="field">
+                                            <label for="round-from" class="form-label">From</label>
+                                            <input type="text" class="form-control" id="round-from"
+                                                placeholder="City or Airport" aria-label="City or Airport"
+                                                name="round-from">
+                                        </div>
+                                        <button type="button" class="btn btn-swap">
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </button>
+                                        <div class="field">
+                                            <label for="round-to" class="form-label">To</label>
+                                            <input type="text" class="form-control" id="round-to"
+                                                placeholder="City or Airport" aria-label="City or Airport"
+                                                name="round-to">
+                                        </div>
+                                        <div class="field">
+                                            <label for="round-depart" class="form-label">Depart</label>
+                                            <input type="text" class="datepicker form-control" id="round-depart"
+                                                aria-label="Depart" name="round-depart" placeholder="DD/MM/YY">
+                                        </div>
+                                        <div class="field">
+                                            <label for="round-return" class="form-label">Return</label>
+                                            <input type="text" class="datepicker form-control" id="round-return"
+                                                aria-label="Return" name="round-return" placeholder="DD/MM/YY">
+                                        </div>
+                                        <div class="field">
+                                            <label for="round-travellers-class" class="form-label">Travellers &amp;
+                                                Class</label>
+                                            <span class="selected-options" id="round-selected-options">1
+                                                Passenger</span>
+                                            <div class="counter-widget" id="counter-widget">
+                                                <div class="row justify-between items-center">
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Adults</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="round-audult-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="round-audult-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="round-audult-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Children</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="round-children-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="round-children-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="round-children-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-between items-center">
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Infrants</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="round-infrants-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="round-infrants-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="round-infrants-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label for="round-cabin-class">Cabin Class</label>
+                                                                <select name="round-cabin-class" class="form-control"
+                                                                    id="round-cabin-class">
+                                                                    <option value="economy">Economy</option>
+                                                                    <option value="premium-economy">Premium Economy
+                                                                    </option>
+                                                                    <option value="business">Business</option>
+                                                                    <option value="first-class">First Class</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-solid btn-search">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            Search
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane active show" id="pills-multicity" role="tabpanel"
+                                aria-labelledby="pills-multicity-tab" tabindex="0">
+                                <form action="" method="">
+                                    <div class="d-flex align-items-center fields">
+                                        <div class="field">
+                                            <label for="multicity-from" class="form-label">From</label>
+                                            <input type="text" class="form-control" id="multicity-from"
+                                                placeholder="City or Airport" aria-label="City or Airport"
+                                                name="multicity-from">
+                                        </div>
+                                        <button type="button" class="btn btn-swap">
+                                            <i class="fa-solid fa-right-left"></i>
+                                        </button>
+                                        <div class="field">
+                                            <label for="multicity-to" class="form-label">To</label>
+                                            <input type="text" class="form-control" id="multicity-to"
+                                                placeholder="City or Airport" aria-label="City or Airport"
+                                                name="multicity-to">
+                                        </div>
+                                        <div class="field">
+                                            <label for="multicity-depart" class="form-label">Depart</label>
+                                            <input type="text" class="datepicker form-control" id="multicity-depart"
+                                                aria-label="Depart" name="multicity-depart" placeholder="DD/MM/YY">
+                                        </div>
+                                        <div class="field">
+                                            <label for="multicity-return" class="form-label">Return</label>
+                                            <input type="text" class="datepicker form-control" id="multicity-return"
+                                                aria-label="Return" name="multicity-return" placeholder="DD/MM/YY">
+                                        </div>
+                                        <div class="field">
+                                            <label for="multicity-travellers-class" class="form-label">Travellers &amp;
+                                                Class</label>
+                                            <span class="selected-options" id="multicity-selected-options">1
+                                                Passenger</span>
+                                            <div class="counter-widget" id="counter-widget">
+                                                <div class="row justify-between items-center">
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Adults</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="multicity-audult-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="multicity-audult-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="multicity-audult-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label>Children</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="multicity-children-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="multicity-children-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="multicity-children-inc">+</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-between items-center">
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+
+                                                            <div class="col-auto">
+                                                                <label>Infrants</label>
+                                                                <div class="d-flex items-center counter">
+                                                                    <button type="button" class="btn-counter-dec"
+                                                                        id="multicity-infrants-dec">-</button>
+                                                                    <span class="counter-count"
+                                                                        id="multicity-infrants-count">0</span>
+                                                                    <button type="button" class="btn-counter-inc"
+                                                                        id="multicity-infrants-inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 lg:col-6">
+                                                        <div class="row">
+                                                            <div class="col-auto">
+                                                                <label for="multicity-cabin-class">Cabin Class</label>
+                                                                <select name="multicity-cabin-class"
+                                                                    class="form-control" id="multicity-cabin-class">
+                                                                    <option value="economy">Economy</option>
+                                                                    <option value="premium-economy">Premium Economy
+                                                                    </option>
+                                                                    <option value="business">Business</option>
+                                                                    <option value="first-class">First Class</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-solid btn-search">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            Search
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pills-bus" role="tabpanel" aria-labelledby="pills-bus-tab" tabindex="0">
+                        <form action="" method="">
+                            <div class="d-flex align-items-center fields">
+                                <div class="field">
+                                    <label for="bus-from" class="form-label">From</label>
+                                    <input type="text" class="form-control" id="bus-from" placeholder="City or Airport"
+                                        aria-label="City or Airport" name="bus-from">
+                                </div>
+                                <button type="button" class="btn btn-swap">
+                                    <i class="fa-solid fa-right-left"></i>
+                                </button>
+                                <div class="field">
+                                    <label for="bus-to" class="form-label">To</label>
+                                    <input type="text" class="form-control" id="bus-to" placeholder="City or Airport"
+                                        aria-label="City or Airport" name="bus-to">
+                                </div>
+                                <div class="field">
+                                    <label for="bus-depart" class="form-label">Depart</label>
+                                    <input type="text" class="datepicker form-control" id="bus-depart"
+                                        aria-label="Depart" name="bus-depart" placeholder="DD/MM/YY">
+                                </div>
+                                <button type="button" class="btn-solid btn-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="pills-car" role="tabpanel" aria-labelledby="pills-car-tab" tabindex="0">
+                        <form action="" method="">
+                            <div class="d-flex align-items-center fields">
+                                <div class="field">
+                                    <label for="car-from" class="form-label">From</label>
+                                    <input type="text" class="form-control" id="car-from" placeholder="City or Airport"
+                                        aria-label="City or Airport" name="car-from">
+                                </div>
+                                <button type="button" class="btn btn-swap">
+                                    <i class="fa-solid fa-right-left"></i>
+                                </button>
+                                <div class="field">
+                                    <label for="car-to" class="form-label">To</label>
+                                    <input type="text" class="form-control" id="car-to" placeholder="City or Airport"
+                                        aria-label="City or Airport" name="car-to">
+                                </div>
+                                <div class="field">
+                                    <label for="car-depart" class="form-label">Depart</label>
+                                    <input type="text" class="datepicker form-control" id="car-depart"
+                                        aria-label="Depart" name="car-depart" placeholder="DD/MM/YY">
+                                </div>
+                                <button type="button" class="btn-solid btn-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="pills-holiday" role="tabpanel" aria-labelledby="pills-holiday-tab"
+                        tabindex="0">
+                        <form action="" method="">
+                            <div class="d-flex align-items-center fields">
+                                <div class="field">
+                                    <label for="holiday-destination" class="form-label">Search Destination</label>
+                                    <input type="text" class="form-control" id="holiday-destination"
+                                        placeholder="City or Airport" aria-label="City or Tour Name"
+                                        name="holiday-destination">
+                                </div>
+                                <button type="button" class="btn-solid btn-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <!-- App JS -->
+    <script src="src/js/app.js" type="module"></script>
+</body>
+
+</html>

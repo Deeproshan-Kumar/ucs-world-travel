@@ -1,0 +1,8 @@
+.nav-link {
+    font-family: var(--font-heading);
+    color: var(--clr-primary);
+}
+
+.nav-link:hover {
+    color: var(--clr-secondary);
+}

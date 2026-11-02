@@ -1,0 +1,49 @@
+@media only screen and (max-width: 991px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .discover-world-module .nav-pills.level-1 {
+        justify-content: flex-start;
+    }
+
+    .fields {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .discover-world-module .tab-content .field {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    .discover-world-module .tab-content .field:not(:last-child) {
+        border-right: 0;
+        border-bottom: 0.0625rem solid #dddddd;
+    }
+
+    .discover-world-module .btn-swap {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 3.75rem) rotate(90deg);
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .logo {
+        height: 4rem;
+    }
+
+    .hero-title {
+        font-size: 1.875rem;
+    }
+}

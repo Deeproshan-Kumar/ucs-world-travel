@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-body: "Inter", sans-serif;
+    --font-heading: "Jost", sans-serif;
+
+    --clr-primary: #051026;
+    --clr-secondary: #f60004;
+    --clr-hero-tab-clr: #051036;
+    --clr-pure-white: #ffffff;
+    --clr-pure-black: #000000;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+/* Navbar */
+.navbar .register-btn {
+    font-weight: 500;
+    min-height: 3.125rem;
+    min-width: 10.3125rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+}
+
+.navbar .login-btn {
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url("../../public/images/banner.avif") no-repeat center;
+    background-size: cover;
+    padding-block: 12rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 16, 54, 0.5);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-title {
+    color: var(--clr-pure-white);
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+.hero-description {
+    color: var(--clr-pure-white);
+    margin-bottom: 0;
+}
+
+.discover-world-module {
+    max-width: 80.625rem;
+    margin: 0 auto;
+}
+
+.discover-world-module .nav-pills.level-1 {
+    position: relative;
+    top: 3rem;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    overflow-x: auto;
+    border-radius: 0;
+}
+
+.discover-world-module .nav-pills.level-1 .nav-link {
+    min-width: 5rem;
+    min-height: 4rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    background-color: var(--clr-pure-white);
+    color: var(--clr-hero-tab-clr);
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 1rem;
+    font-size: 1.25rem;
+}
+
+.discover-world-module .nav-pills.level-1 .nav-link:hover {
+    color: var(--clr-secondary);
+}
+
+.discover-world-module .nav-pills.level-1 .nav-link.active {
+    background-color: var(--clr-secondary);
+    color: var(--clr-pure-white);
+}
+
+.discover-world-module .nav-pills.level-1 .nav-link span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.discover-world-module #pills-level-1-content {
+    padding: 2rem;
+    padding-top: 5rem;
+    border-radius: 0.25rem;
+    box-shadow: rgba(5, 16, 54, 0.07) 0 1.25rem 2.5rem 0;
+}
+
+.discover-world-module .nav-pills.level-2 {
+    background-color: transparent;
+    gap: 1rem;
+    padding: 0;
+    margin-bottom: 0.625rem;
+}
+
+.discover-world-module .nav-pills.level-2 .nav-link {
+    padding: 0.125rem 0.5rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.75rem;
+    user-select: none;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.discover-world-module .nav-pills.level-2 .nav-link:hover {
+    background-color: var(--clr-pure-white);
+    color: var(--clr-primary);
+}
+
+.discover-world-module .nav-pills.level-2 .nav-link.active {
+    background-color: var(--bs-theme-bg, var(--bs-nav-pills-link-active-bg));
+    border-color: var(--bs-theme-bg, var(--bs-nav-pills-link-active-bg));
+    ;
+    color: var(--clr-pure-white);
+}
+
+.discover-world-module .tab-content .fields {
+    border: 0.0625rem solid #dddddd;
+    border-radius: 0.25rem;
+}
+
+.discover-world-module .tab-content .field {
+    position: relative;
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+}
+
+.discover-world-module .tab-content .field:not(:last-child) {
+    border-right: 0.0625rem solid #dddddd;
+}
+
+.discover-world-module .tab-content .field>label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0 0.5rem;
+}
+
+.discover-world-module .tab-content .field>input {
+    font-size: 0.9375rem;
+    border: 0;
+    box-shadow: none;
+    padding-block: 0;
+    min-height: auto;
+    padding: 0 0.5rem;
+}
+
+.discover-world-module .tab-content .field>input::placeholder {
+    color: #aaaaaa;
+}
+
+.discover-world-module .tab-content .field>input:focus-visible {
+    outline: none;
+}
+
+.selected-options {
+    display: block;
+    font-size: 0.9375rem;
+    color: #aaaaaa;
+    padding: 0 0.75rem;
+}
+
+.counter-widget {
+    min-width: 20rem;
+    position: absolute;
+    top: auto;
+    background: var(--clr-pure-white);
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #dddddd;
+}
+
+.counter-widget label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+.discover-world-module .btn-swap {
+    position: relative;
+    left: -1.25rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #dddddd;
+    padding: 0.5rem;
+    aspect-ratio: 1 / 1;
+    background: var(--clr-pure-white);
+    font-size: 0.75rem;
+}
+
+.btn-search {
+    height: 3.4375rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-pure-white);
+    border-radius: 0.25rem;
+    min-width: 9.375rem;
+    font-size: 0.9375rem;
+    ;
+}
