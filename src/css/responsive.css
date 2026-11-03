@@ -3,8 +3,8 @@
         font-size: 2.5rem;
     }
 
-    .discover-world-module .nav-pills.level-1 {
-        justify-content: flex-start;
+    .discover-world-module .nav-pills.level-1 .nav-link {
+        min-width: 4.5rem;
     }
 
     .fields {

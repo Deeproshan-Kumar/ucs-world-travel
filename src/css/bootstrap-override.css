@@ -1,8 +1,50 @@
-.nav-link {
-    font-family: var(--font-heading);
-    color: var(--clr-primary);
+.btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: var(--font-heading);
+  border-radius: 0.25rem;
 }
 
-.nav-link:hover {
-    color: var(--clr-secondary);
+.nav-link,
+.menu-item {
+  font-size: 0.9375rem;
+  font-family: var(--font-heading);
+  color: var(--clr-primary);
+}
+
+.nav-link:hover,
+.menu-item:hover {
+  color: var(--clr-secondary);
+}
+
+.menu-item:active {
+  background-color: var(--clr-secondary);
+  color: var(--clr-pure-white);
+}
+
+.tile {
+  background: var(--clr-secondary);
+  color: var(--clr-pure-white);
+  font-size: 1.4rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.accordion-item {
+  font-weight: 500;
+  border: 0;
+}
+
+.accordion-header {
+  background-color: #f6330029;
+  color: var(--clr-secondary);
+}
+
+.accordion-item[open] .accordion-header {
+  background-color: var(--clr-secondary);
+  color: var(--clr-pure-white);
+  box-shadow: none;
 }
