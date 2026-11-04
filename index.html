@@ -44,11 +44,13 @@
     <!-- Header -->
     <header class="header" id="header"></header>
 
+    <!-- Main -->
     <main>
       <!-- Hero Section -->
       <section class="hero" id="hero" aria-label="Hero Section">
         <div class="container position-relative z-index-1">
           <div class="text-center">
+            <span class="tagline">UCS World Tour &amp; Travels</span>
             <h1 class="hero-title">Discover Your World</h1>
             <p class="hero-description">
               Discover amzaing places at exclusive deals
@@ -132,6 +134,10 @@
                 aria-labelledby="pills-flight-tab"
                 tabindex="0"
               >
+                <div class="booking-intro d-flex align-items-center gap-3">
+                  <span class="icon"><i class="fa-solid fa-plane-up"></i></span>
+                  <p class="mb-0">Start Your Next Adventure</p>
+                </div>
                 <ul
                   class="nav nav-pills level-2 theme-primary"
                   id="pills-tab"
@@ -240,7 +246,7 @@
                           />
                         </div>
                         <div class="field">
-                          <p>Travellers &amp; Class</p>
+                          <p class="form-label">Travellers &amp; Class</p>
                           <span class="selected-options" id="selected-options"
                             >0 Passenger</span
                           >
@@ -457,7 +463,7 @@
                           />
                         </div>
                         <div class="field">
-                          <p>Travellers &amp; Class</p>
+                          <p class="form-label">Travellers &amp; Class</p>
                           <span class="selected-options" id="selected-options"
                             >0 Passenger</span
                           >
@@ -676,7 +682,7 @@
                           />
                         </div>
                         <div class="field">
-                          <p>Travellers &amp; Class</p>
+                          <p class="form-label">Travellers &amp; Class</p>
                           <span class="selected-options" id="selected-options"
                             >0 Passenger</span
                           >
@@ -832,6 +838,10 @@
                 aria-labelledby="pills-bus-tab"
                 tabindex="0"
               >
+                <div class="booking-intro d-flex align-items-center gap-3">
+                  <span class="icon"><i class="fa-solid fa-bus"></i></span>
+                  <p class="mb-0">Start Your Next Adventure</p>
+                </div>
                 <form action="" method="">
                   <!-- Hidden input fields -->
                   <input
@@ -891,6 +901,10 @@
                 aria-labelledby="pills-car-tab"
                 tabindex="0"
               >
+                <div class="booking-intro d-flex align-items-center gap-3">
+                  <span class="icon"><i class="fa-solid fa-car"></i></span>
+                  <p class="mb-0">Start Your Next Adventure</p>
+                </div>
                 <form action="" method="">
                   <!-- Hidden input fields -->
                   <input
@@ -950,6 +964,10 @@
                 aria-labelledby="pills-holiday-tab"
                 tabindex="0"
               >
+                <div class="booking-intro d-flex align-items-center gap-3">
+                  <span class="icon"><i class="fa-solid fa-bed"></i></span>
+                  <p class="mb-0">Start Your Next Adventure</p>
+                </div>
                 <form action="" method="">
                   <!-- Hidden input fields -->
                   <input
@@ -988,7 +1006,8 @@
       <section class="section special-offers" id="special-offers">
         <div class="container">
           <div class="section-header text-center mb-5 xl:pb-4">
-            <h2>Special Offers</h2>
+            <h3 class="h6">Explore &amp; Save</h3>
+            <h2>Special <span class="fg-accent">Offers</span></h2>
             <p class="text-sm mb-0">
               Explore top destinations with UCS Tour and Travels and enjoy
               exclusive deals on flights, buses, and car rentals.
@@ -1078,12 +1097,13 @@
       <section class="section popular-car-hire" id="popular-car-hire">
         <div class="container">
           <div class="section-header mb-5 xl:pb-4">
-            <h2>Popular Car Hire</h2>
+            <h3 class="h6">Travel in Comfort</h3>
+            <h2>Popular Car <span class="fg-accent">Hire</span></h2>
             <p class="text-sm mb-0">
               Explore our most rented cars — perfect for every journey.
             </p>
           </div>
-          <div class="row">
+          <div class="row gy-6 sm:gy-8 lg:gy-6 xl:gy-0">
             <div class="sm:col-12 md:col-6 lg:col-4 xl:col-3">
               <article class="card border-0">
                 <div class="card-header border-0 p-0">
@@ -1093,7 +1113,7 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
+                <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Mahindra XUV 300</h4>
                   <div class="row align-items-center">
                     <div class="col-auto text-xs">
@@ -1119,7 +1139,7 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
+                <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Ertiga VXI</h4>
                   <div class="row align-items-center">
                     <div class="col-auto text-xs">
@@ -1145,7 +1165,7 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
+                <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Swift</h4>
                   <div class="row align-items-center">
                     <div class="col-auto text-xs">
@@ -1171,7 +1191,7 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
+                <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Alto</h4>
                   <div class="row align-items-center">
                     <div class="col-auto text-xs">
@@ -1196,16 +1216,19 @@
       <section class="section why-choose-us" id="why-choose-us">
         <div class="container">
           <div class="section-header text-center mb-5 xl:pb-4">
-            <h2>Why Choose Us</h2>
+            <h3 class="h6">Why Travel with UCS</h3>
+            <h2>Why <span class="fg-accent">Choose Us</span></h2>
             <p class="text-sm mb-0">
               At UCS Tour and Travels, we provide reliable flight, bus, and car
               booking services.
             </p>
           </div>
-          <div class="row">
-            <div class="sm:col-12 md:co-6 lg:col-4">
-              <article class="card shadow">
-                <div class="card-header align-items-center border-0 pt-5 pb-0">
+          <div class="row gy-6 sm:gy-8 lg:gy-6 xl:gy-0">
+            <div class="sm:col-12 md:col-6 lg:col-4">
+              <article class="card">
+                <div
+                  class="card-header align-items-center border-0 pt-4 md:pt-5 pb-0"
+                >
                   <img
                     src="public/icons/guarantee.svg"
                     alt="Guarantee Icon"
@@ -1214,7 +1237,7 @@
                     width="60"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center p-4 md:p-5">
                   <h3 class="h4">Best Price Guarantee</h3>
                   <p class="text-sm">
                     Experience top destinations without overpaying. Our pricing
@@ -1223,9 +1246,11 @@
                 </div>
               </article>
             </div>
-            <div class="sm:col-12 md:co-6 lg:col-4">
-              <article class="card shadow">
-                <div class="card-header align-items-center border-0 pt-5 pb-0">
+            <div class="sm:col-12 md:col-6 lg:col-4">
+              <article class="card">
+                <div
+                  class="card-header align-items-center border-0 pt-4 md:pt-5 pb-0"
+                >
                   <img
                     src="public/icons/booking.svg"
                     alt="Booking Icon"
@@ -1234,7 +1259,7 @@
                     width="60"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center p-4 md:p-5">
                   <h3 class="h4">Easy & Quick Booking</h3>
                   <p class="text-sm">
                     Plan your trip in minutes with our smooth and user-friendly
@@ -1243,8 +1268,8 @@
                 </div>
               </article>
             </div>
-            <div class="sm:col-12 md:co-6 lg:col-4">
-              <article class="card shadow">
+            <div class="sm:col-12 md:col-6 lg:col-4">
+              <article class="card">
                 <div class="card-header align-items-center border-0 pt-5 pb-0">
                   <img
                     src="public/icons/customer-care.svg"
@@ -1254,7 +1279,7 @@
                     width="60"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center p-4 md:p-5">
                   <h3 class="h4">Customer Care 24/7</h3>
                   <p class="text-sm">
                     Our support team is here for you anytime, anywhere — before,
@@ -1271,13 +1296,14 @@
       <section class="section most-popular-tours" id="most-popular-tours">
         <div class="container">
           <div class="section-header mb-5 xl:pb-4">
-            <h2>Most Popular Tours</h2>
+            <h3 class="h6">Explore Our Destinations</h3>
+            <h2>Most Popular <span class="fg-accent">Tours</span></h2>
             <p class="text-sm mb-0">
               Explore our most booked tours, handpicked for adventure lovers,
               families, and first-time travelers.
             </p>
           </div>
-          <div class="row">
+          <div class="row gy-6 sm:gy-6 xl:gy-0">
             <div class="sm:col-12 md:col-6 lg:col-4 xl:col-3">
               <article class="card border-0">
                 <div class="card-header border-0 p-0">
@@ -1287,12 +1313,12 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
-                  <p class="text-sm">4 day Tours</p>
+                <div class="card-body px-0 py-4 md:py-5">
+                  <p class="text-sm">4 Day Tours</p>
                   <h3 class="card-title h4">Adventurous Pattaya</h3>
-                  <div
-                    class="row justify-content-between align-items-center pt-4"
-                  >
+                </div>
+                <div class="card-footer px-0">
+                  <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                       <span class="text-sm">Pattaya</span>
                     </div>
@@ -1300,7 +1326,7 @@
                       <div class="text-xs">
                         From
                         <span class="text-md font-jost fw-medium"
-                          >INR 19999</span
+                          >INR 19999/-</span
                         >
                       </div>
                     </div>
@@ -1317,12 +1343,12 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
-                  <p class="text-sm">6 day Tours</p>
+                <div class="card-body px-0 py-4 md:py-5">
+                  <p class="text-sm">6 Day Tours</p>
                   <h3 class="card-title h4">Kathamandu or Pokhara</h3>
-                  <div
-                    class="row justify-content-between align-items-center pt-4"
-                  >
+                </div>
+                <div class="card-footer px-0">
+                  <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                       <span class="text-sm">Pokhara(NEP)</span>
                     </div>
@@ -1330,7 +1356,7 @@
                       <div class="text-xs">
                         From
                         <span class="text-md font-jost fw-medium"
-                          >INR 6999</span
+                          >INR 6999/-</span
                         >
                       </div>
                     </div>
@@ -1347,12 +1373,12 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
-                  <p class="text-sm">4 day Tours</p>
+                <div class="card-body px-0 py-4 md:py-5">
+                  <p class="text-sm">4 Day Tours</p>
                   <h3 class="card-title h4">Kathamandu Tour</h3>
-                  <div
-                    class="row justify-content-between align-items-center pt-4"
-                  >
+                </div>
+                <div class="card-footer px-0">
+                  <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                       <span class="text-sm">Kathmandu(NEP)</span>
                     </div>
@@ -1360,7 +1386,7 @@
                       <div class="text-xs">
                         From
                         <span class="text-md font-jost fw-medium"
-                          >INR 4999</span
+                          >INR 4999/-</span
                         >
                       </div>
                     </div>
@@ -1377,12 +1403,12 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="card-body px-0 py-4">
-                  <p class="text-sm">4 day Tours</p>
+                <div class="card-body px-0 py-4 md:py-5">
+                  <p class="text-sm">4 Day Tours</p>
                   <h3 class="card-title h4">Cambodia 4N/5D</h3>
-                  <div
-                    class="row justify-content-between align-items-center pt-4"
-                  >
+                </div>
+                <div class="card-footer px-0">
+                  <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                       <span class="text-sm">Siem Reap</span>
                     </div>
@@ -1390,13 +1416,453 @@
                       <div class="text-xs">
                         From
                         <span class="text-md font-jost fw-medium"
-                          >INR 19999</span
+                          >INR 19999/-</span
                         >
                       </div>
                     </div>
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Travel Services -->
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-header mb-5 xl:pb-4">
+            <h3 class="h6">What We Offer</h3>
+            <h2>Our Travel <span class="fg-accent">Services</span></h2>
+            <p class="text-sm mb-0">
+              Everything you need for a comfortable and memorable journey.
+            </p>
+          </div>
+          <div class="row gy-6 sm:gy-8 lg:gy-6 xl:gy-0">
+            <div class="sm:col-12 md:col-6 lg:col-4 xl:col-3">
+              <article class="card border-0">
+                <div class="card-header border-0 p-4 md:p-5 pb-0 md:pb-0">
+                  <span class="icon"><i class="fa-solid fa-plane-up"></i></span>
+                </div>
+                <div class="card-body p-4 md:p-5">
+                  <h3 class="h4">Flight Booking</h3>
+                  <p class="text-sm">
+                    Book domestic and international flights with a smooth
+                    booking experience.
+                  </p>
+                </div>
+                <div
+                  class="card-footer border-0 px-4 md:px-5 pb-4 md:pb-5 pt-0"
+                >
+                  <a href="contact.html" class="btn btn-ghost"
+                    >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="sm:col-12 md:col-6 lg:col-4 xl:col-3">
+              <article class="card border-0">
+                <div class="card-header border-0 p-4 md:p-5 pb-0 md:pb-0">
+                  <span class="icon"><i class="fa-solid fa-bus"></i></span>
+                </div>
+                <div class="card-body p-4 md:p-5">
+                  <h3 class="h4">Bus Booking</h3>
+                  <p class="text-sm">
+                    Find convenient bus travel options for your next
+                    destination.
+                  </p>
+                </div>
+                <div
+                  class="card-footer border-0 px-4 lg:px-5 pb-4 lg:pb-4 pt-0"
+                >
+                  <a href="contact.html" class="btn btn-ghost"
+                    >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="sm:col-12 md:col-6 lg:col-4 xl:col-3">
+              <article class="card border-0">
+                <div class="card-header border-0 p-4 md:p-5 pb-0 md:pb-0">
+                  <span class="icon"><i class="fa-solid fa-car"></i></span>
+                </div>
+                <div class="card-body p-4 md:p-5">
+                  <h3 class="h4">Car Rental</h3>
+                  <p class="text-sm">
+                    Choose a comfortable ride for family trips, business travel
+                    and holidays.
+                  </p>
+                </div>
+                <div
+                  class="card-footer border-0 px-4 md:px-5 pb-4 md:pb-5 pt-0"
+                >
+                  <a href="contact.html" class="btn btn-ghost"
+                    >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+            <div class="sm:col-12 md:col-6 lg:col-4 xl:col-3">
+              <article class="card border-0">
+                <div class="card-header border-0 p-4 md:p-5 pb-0 md:pb-0">
+                  <span class="icon"><i class="fa-solid fa-bed"></i></span>
+                </div>
+                <div class="card-body p-4 md:p-5">
+                  <h3 class="h4">Holiday Packages</h3>
+                  <p class="text-sm">
+                    Discover exciting destinations and plan your next holiday
+                    with us.
+                  </p>
+                </div>
+                <div
+                  class="card-footer border-0 px-4 md:px-5 pb-4 md:pb-5 pt-0"
+                >
+                  <a href="contact.html" class="btn btn-ghost"
+                    >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Destinations -->
+      <section class="section featured-destinations" id="featured-destinations">
+        <div class="container">
+          <div class="section-header mb-5 xl:pb-4">
+            <h3 class="h6">Travel Inspiration</h3>
+            <h2>
+              Explore Beautiful <span class="fg-accent">Destinations</span>
+            </h2>
+            <p class="text-sm mb-0">
+              Discover new places and make memories that last a lifetime.
+            </p>
+            <a href="contact.html" class="btn btn-solid theme-danger"
+              >Plan Your Trip<i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+          <div class="row gy-4 gy-4 sm:gy-4 lg:gy-0 masonry-grid">
+            <div class="col-12 lg:col-4">
+              <article class="legend">
+                <img
+                  src="public/images/pattaya.webp"
+                  alt="Pattaya Image"
+                  class="img-fluid"
+                />
+                <div class="caption p-5 md:p-6">
+                  <span>Thailand</span>
+                  <h3 class="h4">Pattaya</h3>
+                  <p>Discover an exciting holiday destination.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 lg:col-8">
+              <div class="row gy-4 lg:gy-0 mb-4 lg:mb-7">
+                <div class="col-12 lg:col-6">
+                  <article>
+                    <img
+                      src="public/images/pokhara.jpg"
+                      alt="Pokhara Image"
+                      class="img-fluid"
+                    />
+                    <div class="caption p-5 md:p-6">
+                      <span>Nepal</span>
+                      <h3 class="h4">Phokhara</h3>
+                      <p>Explore the beauty of Nepal.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 lg:col-6">
+                  <article>
+                    <img
+                      src="public/images/kathmandu.webp"
+                      alt="Kathmandu Image"
+                      class="img-fluid"
+                    />
+                    <div class="caption p-5 md:p-6">
+                      <span>Nepal</span>
+                      <h3 class="h4">Kathmandu</h3>
+                      <p>Experience a memorable journey.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="row gy-4 lg:gy-0">
+                <div class="col-12">
+                  <article>
+                    <img
+                      src="public/images/siem-reap.avif"
+                      alt="Siem Reap"
+                      class="img-fluid"
+                    />
+                    <div class="caption p-5 md:p-6">
+                      <span>Cambodia</span>
+                      <h3 class="h4">Siem Reap</h3>
+                      <p>Explore a beautiful international destination.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it Works -->
+      <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+          <div class="section-header text-center mb-5 xl:pb-4">
+            <h3 class="h6">Your Journey Starts Here</h3>
+            <h2>How It <span class="fg-accent">Works</span></h2>
+            <p class="text-sm mb-0">
+              Booking your next journey is simple with UCS World Tour and
+              Travels.
+            </p>
+          </div>
+          <div class="row align-items-stretch gy-4 sm:gy-6 md:gy-0">
+            <div
+              class="col-12 md:col-4 d-flex flex-column md:flex-row align-items-center justify-content-between"
+            >
+              <article class="card step h-100" data-step="01">
+                <div
+                  class="card-header border-0 text-center p-4 md:p-5 pb-0 md:pb-0"
+                >
+                  <div class="icon mx-auto">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                  </div>
+                </div>
+                <div class="card-body text-center p-4 md:p-5">
+                  <h3 class="h4">Choose Your Destination</h3>
+                  <p class="text-sm xl:px-10">
+                    Select your destination and choose the travel service you
+                    need.
+                  </p>
+                </div>
+              </article>
+              <i
+                class="fa-solid fa-arrow-right-long mt-5 md:ms-5 fg-accent step-icon"
+              ></i>
+            </div>
+            <div
+              class="col-12 md:col-4 d-flex flex-column md:flex-row align-items-center justify-content-between"
+            >
+              <article class="card step h-100" data-step="02">
+                <div
+                  class="card-header border-0 text-center p-4 md:p-5 pb-0 md:pb-0"
+                >
+                  <div class="icon mx-auto">
+                    <i class="fa-solid fa-calendar"></i>
+                  </div>
+                </div>
+                <div class="card-body text-center p-4 md:p-5">
+                  <h3 class="h4">Make Your Booking</h3>
+                  <p class="text-sm xl:px-10">
+                    Enter your travel details and submit your booking request.
+                  </p>
+                </div>
+              </article>
+              <i
+                class="fa-solid fa-arrow-right-long mt-5 md:ms-5 fg-accent step-icon"
+              ></i>
+            </div>
+            <div
+              class="col-12 md:col-4 d-flex flex-column md:flex-row align-items-center justify-content-between"
+            >
+              <article class="card step h-100" data-step="03">
+                <div
+                  class="card-header border-0 text-center p-4 md:p-5 pb-0 md:pb-0"
+                >
+                  <div class="icon mx-auto">
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+                  </div>
+                </div>
+                <div class="card-body text-center p-4 md:p-5">
+                  <h3 class="h4">Enjoy Your Journey</h3>
+                  <p class="text-sm xl:px-10">
+                    Get ready for your trip and enjoy your travel experience.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section cta" id="cta">
+        <div class="container">
+          <div class="row gx-0 gy-5 sm:gy-5 lg:gy-0">
+            <div class="col-12 lg:col-8">
+              <p
+                class="cta-subtitle text-uppercase text-sm fw-medium fg-accent mb-2 md:lg-3 lg:mb-4"
+              >
+                Let's Make Memories Together
+              </p>
+              <h2 class="cta-title">
+                Your Next Adventure Starts With
+                <span class="fg-accent">UCS</span>
+              </h2>
+              <p class="cta-description pb-2 lg:pb-3">
+                Whether it's a short getaway or an international holiday, let us
+                help you plan your next journey.
+              </p>
+              <a href="contact.html" class="btn btn-solid theme-danger"
+                >Contact Us<i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </div>
+            <div class="col-12 lg:col-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section class="section faqs" id="faqs">
+        <div class="container">
+          <div class="row gy-5 sm:gy-5 lg:gy-0">
+            <div class="col-12 lg:col-5">
+              <div class="section-header mb-5">
+                <h3 class="h6">
+                  <i class="fa-solid fa-hand-holding-heart me-2"></i>We Are Here
+                  To Help
+                </h3>
+                <h2>Online Booking <span class="fg-accent">FAQs</span></h2>
+                <p class="text-sm mb-0">
+                  Have questions about booking your journey with UCS World Tour
+                  and Travels? Find answers to some of the most frequently asked
+                  questions below.
+                </p>
+              </div>
+              <article class="card">
+                <div class="card-body p-4 md:p-5">
+                  <div class="d-flex gap-4">
+                    <div class="icon">
+                      <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div>
+                      <h4 class="mb-0">Still Have Questions?</h4>
+                      <p class="text-sm mb-1">
+                        Our team is ready to help you with your travel queries.
+                      </p>
+                      <a href="contact.html" class="btn btn-ghost"
+                        >Contact Our Team
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <p class="fg-black fw-medium mt-4 mb-0">
+                <i class="fa-solid fa-shield-halved me-2"></i>Your journey
+                matters to us.
+              </p>
+            </div>
+            <div class="col-12 lg:col-7">
+              <div class="accordion space-y-4 mt-4 lg:mt-6 xl:mt-8">
+                <details class="accordion-item" name="faq" open>
+                  <summary class="accordion-header">
+                    <span>01</span> How can I book a tour with UCS World Tour
+                    and Travels?
+                    <svg
+                      class="accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m2 5 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <div class="accordion-body">
+                    You can book a tour by contacting us via our website, email,
+                    or phone. Our team will assist you with planning and booking
+                    every detail of your trip.
+                  </div>
+                </details>
+                <details class="accordion-item" name="faq">
+                  <summary class="accordion-header">
+                    <span>02</span> What is the best time to visit Thailand?
+                    <svg
+                      class="accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m2 5 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <div class="accordion-body">
+                    The best time to visit Thailand is from November to
+                    February, during the cool and dry season.
+                  </div>
+                </details>
+                <details class="accordion-item" name="faq">
+                  <summary class="accordion-header">
+                    <span>03</span> What are the must-visit places in Cambodia?
+                    <svg
+                      class="accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m2 5 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <div class="accordion-body">
+                    Key attractions include Angkor Wat, Phnom Penh, Siem Reap,
+                    and the floating villages of Tonle Sap Lake.
+                  </div>
+                </details>
+                <details class="accordion-item" name="faq">
+                  <summary class="accordion-header">
+                    <span>04</span> How can I book a flight online?
+                    <svg
+                      class="accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m2 5 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <div class="accordion-body">
+                    Select the Flight option in the booking section, enter your
+                    departure city, destination, travel date and passenger
+                    details, then proceed with the available booking options.
+                  </div>
+                </details>
+                <details class="accordion-item" name="faq">
+                  <summary class="accordion-header">
+                    <span>05</span> Can I book bus tickets through your website?
+                    <svg
+                      class="accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m2 5 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <div class="accordion-body">
+                    Yes, you can use the Bus booking option to enter your travel
+                    details and explore available bus booking options.
+                  </div>
+                </details>
+              </div>
             </div>
           </div>
         </div>

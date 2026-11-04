@@ -1,49 +1,93 @@
 @media only screen and (max-width: 991px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
+  .hero-title {
+    font-size: 2.5rem;
+  }
 
-    .discover-world-module .nav-pills.level-1 .nav-link {
-        min-width: 4.5rem;
-    }
+  .section {
+    padding-block: 2rem;
+  }
 
-    .fields {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .discover-world-module .nav-pills.level-1 .nav-link {
+    min-width: 4.5rem;
+  }
 
-    .discover-world-module .tab-content .field {
-        width: 100%;
-        padding: 1rem 0.5rem;
-    }
+  .fields {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .discover-world-module .tab-content .field:not(:last-child) {
-        border-right: 0;
-        border-bottom: 0.0625rem solid #dddddd;
-    }
+  .discover-world-module .tab-content .field {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
 
-    .discover-world-module .btn-swap {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 3.75rem) rotate(90deg);
-    }
+  .discover-world-module .tab-content .field:not(:last-child) {
+    border-right: 0;
+    border-bottom: 0.0625rem solid #dddddd;
+  }
 
-    .btn-search {
-        width: 100%;
-    }
+  .discover-world-module .btn-swap {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 3.75rem) rotate(90deg);
+  }
 
+  .btn-search {
+    width: 100%;
+  }
+
+  .cta .row {
+    padding: 1.5rem;
+  }
+
+  .footer h5 {
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .navbar-brand {
-        padding: 0;
-    }
+  .navbar-brand {
+    padding: 0;
+  }
 
-    .logo {
-        height: 4rem;
-    }
+  .logo {
+    height: 4rem;
+  }
 
-    .hero-title {
-        font-size: 1.875rem;
-    }
+  .section-header .btn {
+    position: static;
+    margin-top: 0.75rem;
+    transform: translateY(0);
+  }
+
+  .hero {
+    padding-top: 12rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.875rem;
+  }
+
+  .discover-world-module #pills-level-1-content {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+
+  .masonry-grid article,
+  .masonry-grid article.legend {
+    height: auto;
+  }
+
+  .card.step {
+    width: 100%;
+  }
+
+  .step-icon {
+    transform: rotate(90deg);
+  }
+
+  .footer h5 {
+    margin-bottom: 0.75rem;
+  }
 }

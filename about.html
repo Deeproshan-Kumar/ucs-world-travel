@@ -44,29 +44,69 @@
     <!-- Header -->
     <header class="header" id="header"></header>
 
+    <!-- Main -->
     <main>
       <!-- Hero Section -->
       <section class="section about-company" id="about-company">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 md:col-6">
-              <img
-                src="public/images/about-company.jpeg"
-                alt="About UCS World Tour and Travels"
-                class="img-fluid shadow"
-                height="384"
-                width="320"
-              />
+              <div class="image-container">
+                <img
+                  src="public/images/about.jpg"
+                  alt="About UCS World Tour and Travels"
+                  class="img-fluid h-100 w-100 object-fit-cover"
+                  height="384"
+                  width="320"
+                />
+              </div>
             </div>
             <div class="col-12 md:col-6">
-              <h1 class="h3 text-center mb-4 lg:mb-6">About Our Company</h1>
-              <p class="fw-normal mb-0">
+              <div class="section-header text-center mb-5">
+                <h3 class="h6">ABOUT UCS WORLD TOUR & TRAVELS</h3>
+                <h2>About Our <span class="fg-accent">Company</span></h2>
+                <p class="text-sm mb-0">
+                  At UCS Tour and Travels, we provide reliable flight, bus, and
+                  car booking services.
+                </p>
+              </div>
+
+              <p class="fw-normal">
                 Welcome to UCS World Tour and Travels, your ultimate travel
                 companion for creating extraordinary experiences worldwide. With
                 a focus on quality, convenience, and customer satisfaction, we
                 offer a comprehensive range of travel services designed to meet
                 all your travel needs under one roof.
               </p>
+
+              <div class="row lg:pt-3">
+                <div class="col-12 md:col-6">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-1">Easy Travel Planning</h6>
+                      <p class="text-xs fw-medium">
+                        Convenient travel services
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 md:col-6">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="icon">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-1">Customer Support</h6>
+                      <p class="text-xs fw-medium">Support whenever you need</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html" class="btn btn-solid theme-danger mt-5 lg:mt-7">Get in Touch<i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -76,16 +116,19 @@
       <section class="section why-choose-us" id="why-choose-us">
         <div class="container">
           <div class="section-header text-center mb-5 xl:pb-4">
-            <h2>Why Choose Us</h2>
+            <h3 class="h6">Why Travel with UCS</h3>
+            <h2>Why <span class="fg-accent">Choose Us</span></h2>
             <p class="text-sm mb-0">
               At UCS Tour and Travels, we provide reliable flight, bus, and car
               booking services.
             </p>
           </div>
-          <div class="row">
-            <div class="sm:col-12 md:co-6 lg:col-4">
-              <article class="card shadow">
-                <div class="card-header align-items-center border-0 pt-5 pb-0">
+          <div class="row gy-6 sm:gy-8 lg:gy-6 xl:gy-0">
+            <div class="sm:col-12 md:col-6 lg:col-4">
+              <article class="card">
+                <div
+                  class="card-header align-items-center border-0 pt-4 md:pt-5 pb-0"
+                >
                   <img
                     src="public/icons/guarantee.svg"
                     alt="Guarantee Icon"
@@ -94,7 +137,7 @@
                     width="60"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center p-4 md:p-5">
                   <h3 class="h4">Best Price Guarantee</h3>
                   <p class="text-sm">
                     Experience top destinations without overpaying. Our pricing
@@ -103,9 +146,11 @@
                 </div>
               </article>
             </div>
-            <div class="sm:col-12 md:co-6 lg:col-4">
-              <article class="card shadow">
-                <div class="card-header align-items-center border-0 pt-5 pb-0">
+            <div class="sm:col-12 md:col-6 lg:col-4">
+              <article class="card">
+                <div
+                  class="card-header align-items-center border-0 pt-4 md:pt-5 pb-0"
+                >
                   <img
                     src="public/icons/booking.svg"
                     alt="Booking Icon"
@@ -114,7 +159,7 @@
                     width="60"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center p-4 md:p-5">
                   <h3 class="h4">Easy & Quick Booking</h3>
                   <p class="text-sm">
                     Plan your trip in minutes with our smooth and user-friendly
@@ -123,8 +168,8 @@
                 </div>
               </article>
             </div>
-            <div class="sm:col-12 md:co-6 lg:col-4">
-              <article class="card shadow">
+            <div class="sm:col-12 md:col-6 lg:col-4">
+              <article class="card">
                 <div class="card-header align-items-center border-0 pt-5 pb-0">
                   <img
                     src="public/icons/customer-care.svg"
@@ -134,7 +179,7 @@
                     width="60"
                   />
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center p-4 md:p-5">
                   <h3 class="h4">Customer Care 24/7</h3>
                   <p class="text-sm">
                     Our support team is here for you anytime, anywhere — before,

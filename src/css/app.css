@@ -53,14 +53,76 @@ select {
   font-family: inherit;
 }
 
-/* Navbar */
-.navbar .register-btn {
-  min-height: 3.125rem;
-  min-width: 10.3125rem;
+p:empty {
+  display: none;
+}
+
+P:last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  border-color: #eaeaea;
 }
 
 .section {
   padding-block: 3rem;
+}
+
+.section-header {
+  position: relative;
+}
+
+.section-header h3 {
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--clr-secondary);
+  letter-spacing: 0.125rem;
+}
+
+.section-header .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title .small {
+  font-size: 0.625rem;
+}
+
+.icon-box,
+.icon {
+  height: 2.75rem;
+  width: 2.75rem;
+  aspect-ratio: 1/1;
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+}
+
+.icon-box {
+  background: var(--clr-primary);
+  color: var(--clr-pure-white);
+}
+
+.icon {
+  background: #fbedf0;
+  color: var(--clr-secondary);
+}
+
+/* Navbar */
+.navbar .register-btn {
+  min-height: 3.125rem;
+  min-width: 10.3125rem;
 }
 
 /* Hero Section */
@@ -68,7 +130,8 @@ select {
   position: relative;
   background: url("../../public/images/banner.avif") no-repeat center;
   background-size: cover;
-  padding-block: 12rem;
+  padding-top: 12rem;
+  padding-bottom: 2rem;
 }
 
 .hero::before {
@@ -81,6 +144,17 @@ select {
   background: linear-gradient(45deg, var(--clr-primary), transparent);
   z-index: 0;
   pointer-events: none;
+}
+
+.hero .tagline {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--clr-secondary);
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  background: #fbedf0;
+  margin-bottom: 1rem;
 }
 
 .hero-title {
@@ -115,6 +189,7 @@ select {
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
   padding: 0.25rem;
   background-color: var(--clr-pure-white);
   color: var(--clr-hero-tab);
@@ -146,7 +221,7 @@ select {
 
 .discover-world-module .nav-pills.level-2 {
   background-color: transparent;
-  gap: 1rem;
+  gap: 0.75rem;
   padding: 0;
   margin-bottom: 0.625rem;
 }
@@ -154,7 +229,7 @@ select {
 .discover-world-module .nav-pills.level-2 .nav-link {
   user-select: none;
   font-size: 0.75rem;
-  border: 0.0625rem solid #ccc;
+  border: 0.0625rem solid #cccccc;
   border-radius: 1rem;
   transition:
     background-color 0.2s,
@@ -168,9 +243,32 @@ select {
 }
 
 .discover-world-module .nav-pills.level-2 .nav-link.active {
-  background-color: var(--bs-theme-bg, var(--bs-nav-pills-link-active-bg));
-  border-color: var(--bs-theme-bg, var(--bs-nav-pills-link-active-bg));
+  background: var(--clr-primary);
+  border: 0;
   color: var(--clr-pure-white);
+}
+
+.discover-world-module .booking-intro {
+  margin-bottom: 1rem;
+}
+
+.discover-world-module .booking-intro .icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.25rem;
+  color: var(--clr-pure-white);
+  background: linear-gradient(var(--clr-secondary), var(--clr-primary));
+}
+
+.discover-world-module .booking-intro p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  color: var(--clr-secondary);
 }
 
 .discover-world-module .tab-content .fields {
@@ -311,7 +409,9 @@ select {
 /* Special Offers */
 .special-offers .image-container {
   position: relative;
+  width: 100%;
   border-radius: 0.25rem;
+  background-color: var(--clr-primary);
   overflow: hidden;
 }
 
@@ -320,10 +420,6 @@ select {
   width: 100%;
   content: "";
   padding-bottom: 150%;
-}
-
-.special-offers .image-container {
-  background-color: var(--clr-primary);
 }
 
 .special-offers .image-container img {
@@ -348,11 +444,12 @@ select {
 
 .swiper-pagination-bullet-active {
   background-color: var(--clr-secondary);
+  width: 2rem;
+  border-radius: 0.25rem;
 }
 
 /* Popular Car Hire */
 .popular-car-hire .card-header {
-  border: 0.0625rem solid #dddddd;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -366,7 +463,35 @@ select {
   text-transform: uppercase;
 }
 
+.popular-car-hire .card,
+.popular-car-hire .card .card-header img {
+  border: 0;
+  transition: 300ms all ease-in-out;
+}
+
+.popular-car-hire .card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.popular-car-hire .card:hover .card-header img {
+  transform: scale(1.05);
+}
+
+/* Why Choose Us */
+.why-choose-us .card {
+  transition: 200ms all ease-in-out;
+}
+
+.why-choose-us .card:hover {
+  transform: translateY(-0.25rem);
+  border-color: var(--clr-secondary);
+}
+
 /* Most Popular Tours */
+.most-popular-tours .card {
+  border: 0;
+}
+
 .most-popular-tours .card-header {
   border-radius: 0.5rem;
   overflow: hidden;
@@ -381,40 +506,139 @@ select {
 }
 
 .most-popular-tours .card-title {
-  position: relative;
-  padding-bottom: 0.25rem;
+  transition: 300ms all ease-in-out;
 }
 
-.most-popular-tours .card-title::before {
+.most-popular-tours .card:hover .card-title {
+  color: var(--clr-secondary);
+}
+
+/* Services */
+
+/* Featured Destinations */
+.masonry-grid article {
+  position: relative;
+  height: 16rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.masonry-grid article.legend {
+  height: 100%;
+}
+
+.masonry-grid article::after {
   content: "";
+  position: absolute;
+  inset: 0rem;
+  background: linear-gradient(to top, #00000075, transparent);
+  z-index: 0;
+}
+
+.masonry-grid article img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 300ms all ease-in-out;
+}
+
+.masonry-grid article:hover img {
+  transform: scale(1.05);
+}
+
+.masonry-grid article .caption {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.15rem;
-  background-color: var(--clr-secondary);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 250ms linear;
-  transition-delay: 250ms;
+  z-index: 1;
 }
 
-.most-popular-tours .card:hover .card-title::before {
-  transform: scaleX(1);
-}
-
-/* Contact Section */
-.section-title {
-  font-size: 1.25rem;
-  font-weight: 500;
-  font-family: var(--font-heading);
+.masonry-grid article .caption span {
+  display: inline-block;
   background: var(--clr-secondary);
   color: var(--clr-pure-white);
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
 }
 
+.masonry-grid article .caption h3 {
+  color: var(--clr-pure-white);
+  margin-bottom: 0;
+}
+
+.masonry-grid article .caption p {
+  color: var(--clr-pure-white);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* How It Works */
+.card.step {
+  transition: all 300ms ease-in-out;
+}
+
+.card.step::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  opacity: 0.25;
+}
+
+.card.step:hover {
+  border: 0.0625rem solid var(--clr-secondary);
+  transform: translateY(-0.5rem);
+}
+
+/* CTA */
+.cta .row {
+  background: var(--clr-primary);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.cta-subtitle {
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.cta-title {
+  color: var(--clr-pure-white);
+}
+
+.cta-description {
+  max-width: 23rem;
+  color: var(--clr-pure-white);
+  font-size: 0.875rem;
+  font-weight: 300;
+  opacity: 80%;
+}
+
+/* About Page */
+.image-container {
+  height: 30rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 300ms ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Contact Page */
 .form.contact label {
   color: var(--clr-pure-black);
   font-weight: 500;
@@ -436,57 +660,57 @@ select {
   min-width: 7rem;
 }
 
-.qr-codes .card-header,
-.bank-acc-list .card-header {
-  height: 5rem;
-  background: var(--clr-primary);
-  border-radius: 0.25rem;
-  padding: 0.75rem;
+.qr-codes .card,
+.bank-acc-list .card {
+  border-top: 0.25rem solid var(--clr-secondary);
+  box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
+  transition: 300ms all ease-in-out;
+}
+
+.qr-codes .card:hover,
+.bank-acc-list .card:hover {
+  box-shadow: none;
+  transform: translateY(-0.25rem);
 }
 
 .qr-codes .card-header {
-  height: 18rem;
+  position: relative;
 }
 
-.bank-acc-list .card-header img,
 .qr-codes .card-header img {
-  height: 100%;
+  height: 8.4375rem;
   width: auto;
   object-fit: contain;
   border-radius: 0.25rem;
 }
 
-.acc-detail {
-  min-height: 4.7rem;
-  font-size: 0.875rem;
-  background: #f6330029;
-  padding: 1rem;
+.qr-codes .card-header .badge {
+  font-size: 0.625rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fbedf0;
+  color: var(--clr-secondary);
+}
+
+.acc-detail span {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  color: var(--clr-text);
+}
+
+.acc-detail .upi {
+  background: #fbedf0;
   border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  border-left: 0.125rem solid var(--clr-secondary);
 }
 
-.acc-detail span:nth-child(2) {
-  color: var(--clr-pure-black);
-  font-weight: 500;
-}
-
-.bank-acc-list table {
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
-.bank-acc-list tr td {
-  font-size: 0.875rem;
-  background: #f6330029;
-  color: var(--clr-primary);
-  padding: 0.5rem 0.75rem;
-}
-
-.bank-acc-list tr td:nth-child(2) {
-  color: var(--clr-pure-black);
-  font-weight: 500;
+.bank-acc-list .card-header img {
+  height: 2.5rem;
 }
 
 /* Footer */
