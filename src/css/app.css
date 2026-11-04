@@ -128,7 +128,7 @@ hr {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url("../../public/images/banner.avif") no-repeat center;
+  background: url("public/images/banner.avif") no-repeat center;
   background-size: cover;
   padding-top: 12rem;
   padding-bottom: 2rem;
@@ -639,20 +639,20 @@ hr {
 }
 
 /* Contact Page */
-.form.contact label {
+.form label {
   color: var(--clr-pure-black);
   font-weight: 500;
   font-size: 0.875rem;
 }
 
-.form.contact input,
-.form.contact textarea {
+.form input,
+.form textarea {
   font-size: 0.875rem;
   border-radius: 0.25rem;
 }
 
-.form.contact input:focus-visible,
-.form.contact textarea:focus-visible {
+.form input:focus-visible,
+.form textarea:focus-visible {
   outline: none;
 }
 

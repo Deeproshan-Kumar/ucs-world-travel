@@ -42,7 +42,98 @@
 
   <body>
     <!-- Header -->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="navbar md:navbar-expand xl:px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand me-0" href="index.html">
+            <img
+              src="public/images/logo.png"
+              alt="Logo"
+              class="img-fluid logo"
+              height="75"
+              width="140"
+            />
+          </a>
+          <div>
+            <a
+              class="btn btn-outline login-btn theme-danger md:d-none"
+              href="login.html"
+            >
+              Login
+            </a>
+            <button
+              class="btn-icon navbar-toggler"
+              type="button"
+              data-bs-toggle="drawer"
+              data-bs-target="#navbarDrawer"
+              aria-controls="navbarDrawer"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <dialog
+            class="drawer drawer-end"
+            tabindex="-1"
+            id="navbarDrawer"
+            aria-labelledby="navbarDrawerLabel"
+          >
+            <div class="drawer-header">
+              <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+              <ul class="nav navbar-nav me-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link"
+                    type="button"
+                    data-bs-toggle="menu"
+                    aria-expanded="false"
+                  >
+                    Wallet Recharge <i class="fa-solid fa-caret-down"></i>
+                  </button>
+                  <div class="menu">
+                    <a class="menu-item" href="bank-information.html"
+                      >Bank Information</a
+                    >
+                    <a class="menu-item" href="#">Deposit Entry</a>
+                    <a class="menu-item" href="#">Wallet History</a>
+                    <a class="menu-item" href="#">Wallet Refund</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <a
+                class="btn btn-outline register-btn theme-danger"
+                href="register.html"
+              >
+                Sign In / Register
+              </a>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+    </header>
 
     <!-- Main -->
     <main>
@@ -1870,7 +1961,136 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-black" id="footer"></footer>
+    <footer class="footer bg-black" id="footer">
+      <div class="container py-8 md:py-10">
+        <div class="row gy-8 sm:gy-8 lg:gy-0">
+          <div class="sm:col-12 lg:col-4 xl:col-4">
+            <a href="index.html">
+              <img
+                src="public/images/logo.png"
+                class="img-fluid"
+                alt="Logo"
+                height="75"
+                width="140"
+              />
+            </a>
+            <p class="text-sm fg-white leading-loose fw-light mt-5 mb-0">
+              UCS World Tour and Travels is a trusted name in the travel
+              industry, offering seamless and affordable travel solutions across
+              world . We specialize in flight booking, bus booking, and car
+              rental services, catering to the diverse needs of travelers with
+              professionalism and care.
+            </p>
+          </div>
+          <div class="sm:col-12 lg:col-3 xl:col-3">
+            <h5>Support</h5>
+            <p class="text-xs fg-white fw-light">Toll Free Customer Care</p>
+            <ul class="list-unstyled space-y-2">
+              <li>
+                <a href="tel:+918853240990">+91 8853240990</a>
+              </li>
+              <li>
+                <a href="tel:+918840622478">+91 8840622478</a>
+              </li>
+            </ul>
+            <p class="text-xs fg-white fw-light">Need live support?</p>
+            <p class="mb-0">
+              <a href="mailto:ucsworldtourstravel2@gmail.com"
+                >ucsworldtourstravel2@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="sm:col-12 lg:col-2 xl:col-2">
+            <h5 class="fg-white">Company</h5>
+            <ul class="list-unstyled space-y-4 mb-0">
+              <li>
+                <a href="index.html" class="footer-link font-jost text-sm"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="footer-link font-jost text-sm"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-link font-jost text-sm"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="faq.html" class="footer-link font-jost text-sm">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sm:col-12 lg:col-3 xl:col-3">
+            <h5>Follow us on social media</h5>
+            <div class="mb-4 md:lg-6 lg:mb-8 xl:mb-10 space-x-3">
+              <a
+                href="https://www.facebook.com/share/1BsAK6co8m/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/ucsworldtourandtravels?utm_source=qr&igsh=bW5pcmJpanhtaHN4"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=vkU_NdjwjFU"
+                target="_blank"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://t.me/UCSTRIP" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </div>
+            <h5>Your all-in-one travel app</h5>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ucs.ucstrip"
+              target="_blank"
+            >
+              <div
+                class="d-flex align-items-center gap-2 bg-white rounded-4 px-4 py-3 lg:py-4"
+              >
+                <i class="fa-brands fa-google-play fg-black fs-lg"></i>
+                <div>
+                  <div class="text-xs fg-black">Get in on</div>
+                  <div class="text-sm fg-black fw-semibold">Google Play</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="copyright-bar d-flex flex-wrap justify-content-center gap-1 md:gap-2 px-4 md:gap-6 lg:gap-8 xl:gap-10 py-4 md:py-6"
+      >
+        <p class="text-sm fg-white mb-0">
+          &copy; 2026 UCS All rights reserved.
+        </p>
+        <p class="text-sm text-center md:text-start space-x-3 mb-0">
+          <a href="support-ticket.html" class="footer-link font-jost text-sm"
+            >Support Ticket</a
+          >
+          <a href="privacy-policy.html" class="footer-link font-jost text-sm"
+            >Privacy Policy</a
+          >
+          <a
+            href="terms-and-conditions.html"
+            class="footer-link font-jost text-sm"
+            >Terms and Conditions</a
+          >
+          <a href="refund-policy.html" class="footer-link font-jost text-sm"
+            >Refund Policy</a
+          >
+        </p>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
