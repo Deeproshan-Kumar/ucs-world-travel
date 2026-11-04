@@ -3,7 +3,6 @@
 :root {
   --font-body: "Inter", sans-serif;
   --font-heading: "Jost", sans-serif;
-
   --clr-primary: #051026;
   --clr-secondary: #f63200;
   --clr-hero-tab: #051036;
@@ -31,7 +30,15 @@ h5,
 h6,
 .h6 {
   font-family: var(--font-heading);
+  font-weight: 600;
   color: var(--clr-primary);
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 700;
 }
 
 .font-inter {
@@ -53,6 +60,10 @@ select {
   font-family: inherit;
 }
 
+p {
+  color: var(--clr-text);
+}
+
 p:empty {
   display: none;
 }
@@ -71,6 +82,8 @@ hr {
 
 .section-header {
   position: relative;
+  max-width: 32rem;
+  margin-inline: auto;
 }
 
 .section-header h3 {
@@ -96,6 +109,10 @@ hr {
 
 .section-title .small {
   font-size: 0.625rem;
+}
+
+.section.static article:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .icon-box,
@@ -128,7 +145,7 @@ hr {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url("public/images/banner.avif") no-repeat center;
+  background: url("../../public/images/banner.avif") no-repeat center;
   background-size: cover;
   padding-top: 12rem;
   padding-bottom: 2rem;
@@ -286,8 +303,8 @@ hr {
   border-right: 0.0625rem solid #dddddd;
 }
 
-.discover-world-module .tab-content .field > label,
-.discover-world-module .tab-content .field > p {
+.discover-world-module .tab-content .field>label,
+.discover-world-module .tab-content .field>p {
   font-size: 0.9375rem;
   font-weight: 500;
   font-family: var(--font-heading);
@@ -295,7 +312,7 @@ hr {
   padding: 0 0.5rem;
 }
 
-.discover-world-module .tab-content .field > input {
+.discover-world-module .tab-content .field>input {
   font-size: 0.75rem;
   border: 0;
   box-shadow: none;
@@ -304,11 +321,11 @@ hr {
   padding: 0 0.5rem;
 }
 
-.discover-world-module .tab-content .field > input::placeholder {
+.discover-world-module .tab-content .field>input::placeholder {
   color: #aaaaaa;
 }
 
-.discover-world-module .tab-content .field > input:focus-visible {
+.discover-world-module .tab-content .field>input:focus-visible {
   outline: none;
 }
 
@@ -624,6 +641,7 @@ hr {
 /* About Page */
 .image-container {
   height: 30rem;
+  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 0.5rem;
   margin: auto;

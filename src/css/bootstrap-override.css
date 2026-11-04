@@ -25,6 +25,14 @@
   color: var(--clr-secondary) !important;
 }
 
+.fg-true-black {
+  color: var(--clr-pure-black) !important;
+}
+
+.fg-true-white {
+  color: var(--clr-pure-white) !important;
+}
+
 .card {
   border: 0.0625rem solid #eaeaea;
 }
@@ -67,6 +75,7 @@
   font-size: 0.75rem;
   height: 1.75rem;
   width: 1.75rem;
+  aspect-ratio: 1/1;
   display: grid;
   place-items: center;
   color: var(--clr-secondary);
@@ -90,10 +99,6 @@
 .accordion-item[open] .accordion-header {
   background-color: var(--clr-pure-white);
   box-shadow: none;
-}
-
-.accordion-item[open] .accordion-header span {
-  background-color: var(--clr-pure-white);
 }
 
 .accordion-item[open] .accordion-body {
