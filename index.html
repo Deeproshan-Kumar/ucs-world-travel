@@ -36,6 +36,25 @@
   </head>
 
   <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="loader" id="loader"></div>
+      <div class="bg-danger position-absolute">
+        <img
+          src="public/images/logo.png"
+          width="150"
+          alt="UCS Logo"
+          class="img-fluid"
+        />
+        <div class="d-flex flex-column align-items-center p-3">
+          <span class="fg-true-white text-sm font-syne"
+            >World Tour &amp; Travels</span
+          >
+          <span class="fg-true-white text-xs font-syne">LOADING...</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="header" id="header">
       <nav class="navbar md:navbar-expand xl:px-4">
@@ -284,7 +303,7 @@
                     aria-labelledby="pills-oneway-tab"
                     tabindex="0"
                   >
-                    <form action="" method="">
+                    <form action="search.html" method="get">
                       <!-- Hidden input fields -->
                       <input
                         type="hidden"
@@ -457,7 +476,7 @@
                                   <div class="col-12">
                                     <p>Cabin Class</p>
                                     <select
-                                      name="cabin-class"
+                                      name="cabin_class"
                                       class="form-control"
                                       id="oneway-cabin-class"
                                     >
@@ -488,7 +507,7 @@
                     aria-labelledby="pills-round-tab"
                     tabindex="0"
                   >
-                    <form action="" method="">
+                    <form action="search.html" method="get">
                       <!-- Hidden input fields -->
                       <input
                         type="hidden"
@@ -674,7 +693,7 @@
                                   <div class="col-12">
                                     <p>Cabin Class</p>
                                     <select
-                                      name="cabin-class"
+                                      name="cabin_class"
                                       class="form-control"
                                       id="round-cabin-class"
                                     >
@@ -705,7 +724,7 @@
                     aria-labelledby="pills-multicity-tab"
                     tabindex="0"
                   >
-                    <form action="" method="">
+                    <form action="search.html" method="get">
                       <!-- Hidden input fields -->
                       <input
                         type="hidden"
@@ -893,7 +912,7 @@
                                   <div class="col-12">
                                     <p>Cabin Class</p>
                                     <select
-                                      name="cabin-class"
+                                      name="cabin_class"
                                       class="form-control"
                                       id="multicity-cabin-class"
                                     >
@@ -932,7 +951,7 @@
                     >Start Your Next Adventure</span
                   >
                 </div>
-                <form action="" method="">
+                <form action="search.html" method="get">
                   <!-- Hidden input fields -->
                   <input
                     type="hidden"
@@ -997,7 +1016,7 @@
                     >Start Your Next Adventure</span
                   >
                 </div>
-                <form action="" method="">
+                <form action="search.html" method="get">
                   <!-- Hidden input fields -->
                   <input
                     type="hidden"
@@ -1062,7 +1081,7 @@
                     >Start Your Next Adventure</span
                   >
                 </div>
-                <form action="" method="">
+                <form action="search.html" method="get">
                   <!-- Hidden input fields -->
                   <input
                     type="hidden"

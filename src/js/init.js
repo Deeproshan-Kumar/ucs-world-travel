@@ -1,3 +1,23 @@
+// Initialize Preloader
+export const initPreloader = () => {
+  window.addEventListener(
+    "load",
+    () => {
+      const preloader = document.getElementById("preloader");
+
+      if (!preloader) return;
+
+      document.body.style.overflow = "hidden";
+
+      setTimeout(() => {
+        preloader.classList.add("hide");
+        document.body.style.overflow = "";
+      }, 2000);
+    },
+    { once: true },
+  );
+};
+
 // Initialize Date Picker
 export const initDatePicker = () => {
   $(document).ready(function () {
