@@ -3,6 +3,7 @@
   font-weight: 500;
   font-family: var(--font-heading);
   border-radius: 0.25rem;
+  letter-spacing: 0.0625rem;
 }
 
 .btn i {
@@ -109,4 +110,42 @@
 .alert {
   border: 0.0625rem solid #eaeaea;
   border-left: 0.25rem solid var(--clr-secondary);
+}
+
+/* jQuery Datepicker Customisation */
+.ui-widget.ui-widget-content {
+  border: 0.0625rem solid #eaeaea;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 0.25rem 0;
+  background: #fbedf0;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 0.875rem;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #eaeaea;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+  font-size: 0.875rem;
+}
+
+.ui-state-highlight {
+  color: var(--clr-pure-white) !important;
+  background: var(--clr-secondary) !important;
+  border: 0.0625rem solid var(--clr-secondary) !important;
+}
+
+.ui-state-active {
+  background: var(--clr-primary) !important;
+  border: 0.0625rem solid var(--clr-primary) !important;
 }

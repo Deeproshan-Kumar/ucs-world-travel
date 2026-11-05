@@ -26,11 +26,6 @@
     />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="src/css/bootstrap-override.css" />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
     <!-- App CSS -->
     <link rel="stylesheet" href="src/css/app.css" />
     <!-- Responsive CSS -->
@@ -166,7 +161,7 @@
                         id="fname"
                         name="fname"
                         class="form-control"
-                        placeholder="Enter your first name"
+                        placeholder="John"
                         required
                       />
                     </div>
@@ -179,7 +174,7 @@
                         id="last-name"
                         name="last_name"
                         class="form-control"
-                        placeholder="Enter your last name"
+                        placeholder="Doe"
                         required
                       />
                     </div>
@@ -194,7 +189,7 @@
                         id="phone"
                         name="phone"
                         class="form-control"
-                        placeholder="Enter your phone number"
+                        placeholder="+91 XXX-XXX-XXXX"
                         required
                       />
                     </div>
@@ -207,7 +202,7 @@
                         id="email"
                         name="email"
                         class="form-control"
-                        placeholder="Enter your email"
+                        placeholder="example@gmail.com"
                         required
                       />
                     </div>
@@ -215,29 +210,35 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <div class="form-group">
+                    <div class="form-group password">
                       <label for="password">Password</label>
                       <input
                         type="password"
                         id="password"
                         name="password"
                         class="form-control"
-                        placeholder="Enter your password"
+                        placeholder="Password"
                         required
                       />
+                      <button type="button" class="toggle-password">
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
                     </div>
                   </div>
                   <div class="col">
-                    <div class="form-group">
+                    <div class="form-group password">
                       <label for="cpassword">Confirm Password</label>
                       <input
                         type="password"
                         id="cpassword"
                         name="cpassword"
                         class="form-control"
-                        placeholder="Enter your password"
+                        placeholder="Confirm Password"
                         required
                       />
+                      <button type="button" class="toggle-password">
+                        <i class="fa-solid fa-eye"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -257,7 +258,7 @@
                   </div>
                 </div>
                 <button type="submit" class="btn btn-solid theme-danger">
-                  Register
+                  Register<i class="fa-solid fa-arrow-right-long"></i>
                 </button>
               </form>
             </div>
@@ -290,7 +291,9 @@
           </div>
           <div class="sm:col-12 lg:col-3 xl:col-3">
             <h5>Support</h5>
-            <p class="text-xs fg-true-white fw-light">Toll Free Customer Care</p>
+            <p class="text-xs fg-true-white fw-light">
+              Toll Free Customer Care
+            </p>
             <ul class="list-unstyled space-y-2">
               <li>
                 <a href="tel:+918853240990">+91 8853240990</a>
@@ -310,22 +313,22 @@
             <h5 class="fg-true-white">Company</h5>
             <ul class="list-unstyled space-y-4 mb-0">
               <li>
-                <a href="index.html" class="footer-link font-jost text-sm"
+                <a href="index.html" class="footer-link font-syne text-sm"
                   >Home</a
                 >
               </li>
               <li>
-                <a href="about.html" class="footer-link font-jost text-sm"
+                <a href="about.html" class="footer-link font-syne text-sm"
                   >About Us</a
                 >
               </li>
               <li>
-                <a href="contact.html" class="footer-link font-jost text-sm"
+                <a href="contact.html" class="footer-link font-syne text-sm"
                   >Contact Us</a
                 >
               </li>
               <li>
-                <a href="faq.html" class="footer-link font-jost text-sm">FAQ</a>
+                <a href="faq.html" class="footer-link font-syne text-sm">FAQ</a>
               </li>
             </ul>
           </div>
@@ -365,7 +368,9 @@
                 <i class="fa-brands fa-google-play fg-true-black fs-lg"></i>
                 <div>
                   <div class="text-xs fg-true-black">Get in on</div>
-                  <div class="text-sm fg-true-black fw-semibold">Google Play</div>
+                  <div class="text-sm fg-true-black fw-semibold">
+                    Google Play
+                  </div>
                 </div>
               </div>
             </a>
@@ -380,18 +385,18 @@
           &copy; 2026 UCS All rights reserved.
         </p>
         <p class="text-sm text-center md:text-start space-x-3 mb-0">
-          <a href="support-ticket.html" class="footer-link font-jost text-sm"
+          <a href="support-ticket.html" class="footer-link font-syne text-sm"
             >Support Ticket</a
           >
-          <a href="privacy-policy.html" class="footer-link font-jost text-sm"
+          <a href="privacy-policy.html" class="footer-link font-syne text-sm"
             >Privacy Policy</a
           >
           <a
             href="terms-and-conditions.html"
-            class="footer-link font-jost text-sm"
+            class="footer-link font-syne text-sm"
             >Terms and Conditions</a
           >
-          <a href="refund-policy.html" class="footer-link font-jost text-sm"
+          <a href="refund-policy.html" class="footer-link font-syne text-sm"
             >Refund Policy</a
           >
         </p>
@@ -409,8 +414,6 @@
       integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
       crossorigin="anonymous"
     ></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- App JS -->
     <script src="src/js/app.js" type="module"></script>
   </body>

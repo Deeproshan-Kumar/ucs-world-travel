@@ -2,10 +2,10 @@ import {
   initDatePicker,
   initTravellersClass,
   initCounters,
-  initSpecialOfferSwiper,
+  initTogglePassword,
 } from "./init.js";
 
 initDatePicker();
 initTravellersClass();
-initCounters();
-initSpecialOfferSwiper();
+initCounters()
+initTogglePassword();

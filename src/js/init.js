@@ -84,49 +84,17 @@ export const initCounters = () => {
   });
 };
 
-// Initialize Special Offer Swiper
-function initSwiper(swiperId, options) {
-  const swiper = new Swiper(swiperId, options);
-}
+// Initialize Password Toggle
+export const initTogglePassword = () => {
+  document.addEventListener("click", (e) => {
+    const toggle = e.target.closest(".toggle-password");
+    if (!toggle) return;
 
-export const initSpecialOfferSwiper = () => {
-  initSwiper("#specialOffersSwiper", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
+    const field = toggle.closest(".password");
+    const input = field?.querySelector("input");
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    if (!input) return;
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-
-    breakpoints: {
-      // Mobile
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-
-      // Tablet
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-
-      // Desktop
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
+    input.type = input.type === "password" ? "text" : "password";
   });
 };

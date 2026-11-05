@@ -51,7 +51,8 @@
   }
 
   .logo {
-    height: 4rem;
+    height: 3rem;
+    width: auto;
   }
 
   .section-header .btn {
@@ -74,8 +75,8 @@
     padding-top: 4rem;
   }
 
-  .masonry-grid article,
-  .masonry-grid article.legend {
+  .featured-destinations article,
+  .featured-destinations article.legend {
     height: auto;
   }
 

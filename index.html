@@ -29,11 +29,6 @@
     />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="src/css/bootstrap-override.css" />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
     <!-- App CSS -->
     <link rel="stylesheet" href="src/css/app.css" />
     <!-- Responsive CSS -->
@@ -227,7 +222,9 @@
               >
                 <div class="booking-intro d-flex align-items-center gap-3">
                   <span class="icon"><i class="fa-solid fa-plane-up"></i></span>
-                  <p class="mb-0">Start Your Next Adventure</p>
+                  <span class="h6 fg-accent mb-0"
+                    >Start Your Next Adventure</span
+                  >
                 </div>
                 <ul
                   class="nav nav-pills level-2 theme-primary"
@@ -236,7 +233,7 @@
                 >
                   <li class="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      class="nav-link active"
                       id="pills-oneway-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#pills-oneway"
@@ -266,7 +263,7 @@
                   </li>
                   <li class="nav-item" role="presentation">
                     <button
-                      class="nav-link active"
+                      class="nav-link"
                       id="pills-multicity-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#pills-multicity"
@@ -281,7 +278,7 @@
                 </ul>
                 <div class="tab-content" id="pills-level-2-content">
                   <div
-                    class="tab-pane"
+                    class="tab-pane active show"
                     id="pills-oneway"
                     role="tabpanel"
                     aria-labelledby="pills-oneway-tab"
@@ -477,7 +474,7 @@
                             </div>
                           </div>
                         </div>
-                        <button type="submit" class="btn-solid btn-search">
+                        <button type="submit" class="btn btn-solid btn-search">
                           <i class="fa-solid fa-magnifying-glass"></i>
                           Search
                         </button>
@@ -694,7 +691,7 @@
                             </div>
                           </div>
                         </div>
-                        <button type="submit" class="btn-solid btn-search">
+                        <button type="submit" class="btn btn-solid btn-search">
                           <i class="fa-solid fa-magnifying-glass"></i>
                           Search
                         </button>
@@ -702,7 +699,7 @@
                     </form>
                   </div>
                   <div
-                    class="tab-pane active show"
+                    class="tab-pane"
                     id="pills-multicity"
                     role="tabpanel"
                     aria-labelledby="pills-multicity-tab"
@@ -931,7 +928,9 @@
               >
                 <div class="booking-intro d-flex align-items-center gap-3">
                   <span class="icon"><i class="fa-solid fa-bus"></i></span>
-                  <p class="mb-0">Start Your Next Adventure</p>
+                  <span class="h6 fg-accent mb-0"
+                    >Start Your Next Adventure</span
+                  >
                 </div>
                 <form action="" method="">
                   <!-- Hidden input fields -->
@@ -978,7 +977,7 @@
                         placeholder="DD/MM/YY"
                       />
                     </div>
-                    <button type="submit" class="btn-solid btn-search">
+                    <button type="submit" class="btn btn-solid btn-search">
                       <i class="fa-solid fa-magnifying-glass"></i>
                       Search
                     </button>
@@ -994,7 +993,9 @@
               >
                 <div class="booking-intro d-flex align-items-center gap-3">
                   <span class="icon"><i class="fa-solid fa-car"></i></span>
-                  <p class="mb-0">Start Your Next Adventure</p>
+                  <span class="h6 fg-accent mb-0"
+                    >Start Your Next Adventure</span
+                  >
                 </div>
                 <form action="" method="">
                   <!-- Hidden input fields -->
@@ -1041,7 +1042,7 @@
                         placeholder="DD/MM/YY"
                       />
                     </div>
-                    <button type="submit" class="btn-solid btn-search">
+                    <button type="submit" class="btn btn-solid btn-search">
                       <i class="fa-solid fa-magnifying-glass"></i>
                       Search
                     </button>
@@ -1057,7 +1058,9 @@
               >
                 <div class="booking-intro d-flex align-items-center gap-3">
                   <span class="icon"><i class="fa-solid fa-bed"></i></span>
-                  <p class="mb-0">Start Your Next Adventure</p>
+                  <span class="h6 fg-accent mb-0"
+                    >Start Your Next Adventure</span
+                  >
                 </div>
                 <form action="" method="">
                   <!-- Hidden input fields -->
@@ -1081,7 +1084,7 @@
                         name="destination"
                       />
                     </div>
-                    <button type="submit" class="btn-solid btn-search">
+                    <button type="submit" class="btn btn-solid btn-search">
                       <i class="fa-solid fa-magnifying-glass"></i>
                       Search
                     </button>
@@ -1104,82 +1107,84 @@
               exclusive deals on flights, buses, and car rentals.
             </p>
           </div>
-          <div class="swiper" id="specialOffersSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-1.jpeg"
-                    alt="Special Offer 1"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-2.jpeg"
-                    alt="Special Offer 2"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-3.jpg"
-                    alt="Special Offer 3"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-4.jpeg"
-                    alt="Special Offer 4"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-5.jpeg"
-                    alt="Special Offer 5"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-6.jpeg"
-                    alt="Special Offer 6"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-7.jpeg"
-                    alt="Special Offer 7"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image-container">
-                  <img
-                    src="public/images/offer-8.jpg"
-                    alt="Special Offer 8"
-                    class="img-fluid"
-                  />
-                </div>
+          <div class="row gy-6 md:gy-0">
+            <div class="col-12 md:col-6">
+              <div class="masonry-grid">
+                <img
+                  src="public/images/offer-1.jpeg"
+                  alt="Special Offer 1"
+                  class="img-fluid"
+                />
+                <img
+                  src="public/images/offer-2.jpeg"
+                  alt="Special Offer 2"
+                  class="img-fluid"
+                />
+
+                <img
+                  src="public/images/offer-3.jpg"
+                  alt="Special Offer 3"
+                  class="img-fluid"
+                />
+                <img
+                  src="public/images/offer-4.jpeg"
+                  alt="Special Offer 4"
+                  class="img-fluid"
+                />
+                <img
+                  src="public/images/offer-5.jpeg"
+                  alt="Special Offer 5"
+                  class="img-fluid"
+                />
+                <img
+                  src="public/images/offer-6.jpeg"
+                  alt="Special Offer 6"
+                  class="img-fluid"
+                />
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="col-12 md:col-6">
+              <span class="badge theme-accent mb-2">Exclusive Offers</span>
+              <h2>
+                Your Next Journey<br />
+                Starts Here!
+              </h2>
+              <p class="text-sm">
+                Discover amazing travel deals with UCS Tour and Travels.
+              </p>
+              <ul class="list-unstyled space-y-4 md:space-y-6">
+                <li class="d-flex align-items-center gap-3">
+                  <div class="icon">
+                    <i class="fa-solid fa-plane-up"></i>
+                  </div>
+                  <div>
+                    <h5 class="fg-pure-black mb-0">Flight Deals</h5>
+                    <p class="text-sm">Affordable air tickets</p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <div class="icon">
+                    <i class="fa-solid fa-bus"></i>
+                  </div>
+                  <div>
+                    <h5 class="fg-pure-black mb-0">Bus Offers</h5>
+                    <p class="text-sm">Comfortable journeys</p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <div class="icon">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                  <div>
+                    <h5 class="fg-pure-black mb-0">Car Rentals</h5>
+                    <p class="text-sm">Travel at your pace</p>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-solid theme-danger w-100"
+                >Explore All Offers<i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -1204,6 +1209,7 @@
                     class="img-fluid"
                   />
                 </div>
+                <span class="card-separator"></span>
                 <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Mahindra XUV 300</h4>
                   <div class="row align-items-center">
@@ -1230,6 +1236,7 @@
                     class="img-fluid"
                   />
                 </div>
+                <span class="card-separator"></span>
                 <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Ertiga VXI</h4>
                   <div class="row align-items-center">
@@ -1256,6 +1263,7 @@
                     class="img-fluid"
                   />
                 </div>
+                <span class="card-separator"></span>
                 <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Swift</h4>
                   <div class="row align-items-center">
@@ -1282,6 +1290,7 @@
                     class="img-fluid"
                   />
                 </div>
+                <span class="card-separator"></span>
                 <div class="card-body px-0 py-4 md:py-5">
                   <h4 class="card-title">Alto</h4>
                   <div class="row align-items-center">
@@ -1416,7 +1425,7 @@
                     <div class="col-auto">
                       <div class="text-xs">
                         From
-                        <span class="text-md font-jost fw-medium"
+                        <span class="text-md font-syne fw-medium"
                           >INR 19999/-</span
                         >
                       </div>
@@ -1446,7 +1455,7 @@
                     <div class="col-auto">
                       <div class="text-xs">
                         From
-                        <span class="text-md font-jost fw-medium"
+                        <span class="text-md font-syne fw-medium"
                           >INR 6999/-</span
                         >
                       </div>
@@ -1476,7 +1485,7 @@
                     <div class="col-auto">
                       <div class="text-xs">
                         From
-                        <span class="text-md font-jost fw-medium"
+                        <span class="text-md font-syne fw-medium"
                           >INR 4999/-</span
                         >
                       </div>
@@ -1506,7 +1515,7 @@
                     <div class="col-auto">
                       <div class="text-xs">
                         From
-                        <span class="text-md font-jost fw-medium"
+                        <span class="text-md font-syne fw-medium"
                           >INR 19999/-</span
                         >
                       </div>
@@ -1542,9 +1551,7 @@
                     booking experience.
                   </p>
                 </div>
-                <div
-                  class="card-footer border-0 px-5 pb-5 pt-0"
-                >
+                <div class="card-footer border-0 px-5 pb-5 pt-0">
                   <a href="contact.html" class="btn btn-ghost"
                     >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
                   ></a>
@@ -1584,9 +1591,7 @@
                     and holidays.
                   </p>
                 </div>
-                <div
-                  class="card-footer border-0 px-5 pb-5 pt-0"
-                >
+                <div class="card-footer border-0 px-5 pb-5 pt-0">
                   <a href="contact.html" class="btn btn-ghost"
                     >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
                   ></a>
@@ -1605,9 +1610,7 @@
                     with us.
                   </p>
                 </div>
-                <div
-                  class="card-footer border-0 px-5 pb-5 pt-0"
-                >
+                <div class="card-footer border-0 px-5 pb-5 pt-0">
                   <a href="contact.html" class="btn btn-ghost"
                     >Explore Servive<i class="fa-solid fa-arrow-right-long"></i
                   ></a>
@@ -1633,7 +1636,7 @@
               >Plan Your Trip<i class="fa-solid fa-arrow-right-long"></i
             ></a>
           </div>
-          <div class="row gy-4 gy-4 sm:gy-4 lg:gy-0 masonry-grid">
+          <div class="row gy-4 gy-4 sm:gy-4 lg:gy-0">
             <div class="col-12 lg:col-4">
               <article class="legend">
                 <img
@@ -1783,7 +1786,7 @@
       <!-- CTA -->
       <section class="section cta" id="cta">
         <div class="container">
-          <div class="row gx-0 gy-5 sm:gy-5 lg:gy-0">
+          <div class="row gx-0 gy-6 sm:gy-6 lg:gy-0">
             <div class="col-12 lg:col-8">
               <p
                 class="cta-subtitle text-uppercase text-sm fw-medium fg-accent mb-2 md:lg-3 lg:mb-4"
@@ -1810,7 +1813,7 @@
       <!-- FAQs -->
       <section class="section faqs" id="faqs">
         <div class="container">
-          <div class="row gy-5 sm:gy-5 lg:gy-0">
+          <div class="row gy-6 sm:gy-6 lg:gy-0">
             <div class="col-12 lg:col-5">
               <div class="section-header mb-5">
                 <h3 class="h6">
@@ -1984,7 +1987,9 @@
           </div>
           <div class="sm:col-12 lg:col-3 xl:col-3">
             <h5>Support</h5>
-            <p class="text-xs fg-true-white fw-light">Toll Free Customer Care</p>
+            <p class="text-xs fg-true-white fw-light">
+              Toll Free Customer Care
+            </p>
             <ul class="list-unstyled space-y-2">
               <li>
                 <a href="tel:+918853240990">+91 8853240990</a>
@@ -2004,22 +2009,22 @@
             <h5 class="fg-true-white">Company</h5>
             <ul class="list-unstyled space-y-4 mb-0">
               <li>
-                <a href="index.html" class="footer-link font-jost text-sm"
+                <a href="index.html" class="footer-link font-syne text-sm"
                   >Home</a
                 >
               </li>
               <li>
-                <a href="about.html" class="footer-link font-jost text-sm"
+                <a href="about.html" class="footer-link font-syne text-sm"
                   >About Us</a
                 >
               </li>
               <li>
-                <a href="contact.html" class="footer-link font-jost text-sm"
+                <a href="contact.html" class="footer-link font-syne text-sm"
                   >Contact Us</a
                 >
               </li>
               <li>
-                <a href="faq.html" class="footer-link font-jost text-sm">FAQ</a>
+                <a href="faq.html" class="footer-link font-syne text-sm">FAQ</a>
               </li>
             </ul>
           </div>
@@ -2059,7 +2064,9 @@
                 <i class="fa-brands fa-google-play fg-true-black fs-lg"></i>
                 <div>
                   <div class="text-xs fg-true-black">Get in on</div>
-                  <div class="text-sm fg-true-black fw-semibold">Google Play</div>
+                  <div class="text-sm fg-true-black fw-semibold">
+                    Google Play
+                  </div>
                 </div>
               </div>
             </a>
@@ -2074,18 +2081,18 @@
           &copy; 2026 UCS All rights reserved.
         </p>
         <p class="text-sm text-center md:text-start space-x-3 mb-0">
-          <a href="support-ticket.html" class="footer-link font-jost text-sm"
+          <a href="support-ticket.html" class="footer-link font-syne text-sm"
             >Support Ticket</a
           >
-          <a href="privacy-policy.html" class="footer-link font-jost text-sm"
+          <a href="privacy-policy.html" class="footer-link font-syne text-sm"
             >Privacy Policy</a
           >
           <a
             href="terms-and-conditions.html"
-            class="footer-link font-jost text-sm"
+            class="footer-link font-syne text-sm"
             >Terms and Conditions</a
           >
-          <a href="refund-policy.html" class="footer-link font-jost text-sm"
+          <a href="refund-policy.html" class="footer-link font-syne text-sm"
             >Refund Policy</a
           >
         </p>
@@ -2103,8 +2110,6 @@
       integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
       crossorigin="anonymous"
     ></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- App JS -->
     <script src="src/js/app.js" type="module"></script>
   </body>
