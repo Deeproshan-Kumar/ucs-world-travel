@@ -34,13 +34,13 @@
 }
 
 .card {
-  border: 0.0625rem solid #eaeaea;
+  border: 0.0625rem solid var(--clr-border-clr);
 }
 
 .card-header,
 .card-footer {
   background: var(--clr-pure-white);
-  border-color: #eaeaea;
+  border-color: var(--clr-border-clr);
 }
 
 .nav-link,
@@ -107,13 +107,17 @@
 }
 
 .alert {
-  border: 0.0625rem solid #eaeaea;
+  border: 0.0625rem solid var(--clr-border-clr);
   border-left: 0.25rem solid var(--clr-secondary);
 }
 
 /* jQuery Datepicker Customisation */
+.ui-datepicker {
+  z-index: 20;
+}
+
 .ui-widget.ui-widget-content {
-  border: 0.0625rem solid #eaeaea;
+  border: 0.0625rem solid var(--clr-border-clr);
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -125,7 +129,7 @@
   font-size: 0.875rem;
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
-  border: 0.0625rem solid #eaeaea;
+  border: 0.0625rem solid var(--clr-border-clr);
 }
 
 .ui-datepicker .ui-datepicker-title {

@@ -8,6 +8,7 @@
   --clr-hero-tab: #051036;
   --clr-pure-white: #ffffff;
   --clr-pure-black: #000000;
+  --clr-border-clr: #eaeaea;
   --clr-text: #697488;
 }
 
@@ -73,7 +74,7 @@ P:last-child {
 }
 
 hr {
-  border-color: #eaeaea;
+  border-color: var(--clr-border-clr);
 }
 
 .section {
@@ -208,7 +209,7 @@ hr {
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 0.0625rem solid #eaeaea;
+  border-bottom: 0.0625rem solid var(--clr-border-clr);
 }
 
 .navbar .register-btn {
@@ -364,7 +365,7 @@ hr {
 }
 
 .discover-world-module .tab-content .fields {
-  border: 0.0625rem solid #dddddd;
+  border: 0.0625rem solid var(--clr-border-clr);
   border-radius: 0.25rem;
 }
 
@@ -375,7 +376,7 @@ hr {
 }
 
 .discover-world-module .tab-content .field:not(:last-child) {
-  border-right: 0.0625rem solid #dddddd;
+  border-right: 0.0625rem solid var(--clr-border-clr);
 }
 
 .discover-world-module .tab-content .field > label,
@@ -419,7 +420,7 @@ hr {
   background: var(--clr-pure-white);
   padding: 0.625rem;
   border-radius: 0.25rem;
-  border: 0.0625rem solid #dddddd;
+  border: 0.0625rem solid var(--clr-border-clr);
   display: none;
 }
 
@@ -444,7 +445,7 @@ hr {
   position: relative;
   left: -1.25rem;
   border-radius: 50%;
-  border: 0.0625rem solid #dddddd;
+  border: 0.0625rem solid var(--clr-border-clr);
   padding: 0.5rem;
   aspect-ratio: 1 / 1;
   background: var(--clr-pure-white);
@@ -812,8 +813,7 @@ hr {
 
 /* Search Result Page */
 .filters {
-  top: 6.541875rem;
-  border-bottom: 0.0625rem solid #dddddd;
+  border-bottom: 0.0625rem solid var(--clr-border-clr);
   box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
   z-index: 10;
 }
@@ -827,14 +827,10 @@ hr {
 }
 
 .sidebar {
-  position: sticky;
-  top: 12.416875000000001rem;
+  min-width: 15rem;
   flex: 1;
-  max-height: calc(100vh - 12.416875000000001rem);
-  overflow-y: auto;
-  padding-inline: 1rem;
   background: var(--clr-pure-white);
-  border-right: 0.0625rem solid #dddddd;
+  border-right: 0.0625rem solid var(--clr-border-clr);
 }
 
 .sidebar > .form:not(:last-child) {
@@ -861,7 +857,7 @@ hr {
 
 .search-results-header .sorting select {
   font-size: 0.875rem;
-  border: 0.0625rem solid #dddddd;
+  border: 0.0625rem solid var(--clr-border-clr);
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
 }
@@ -876,7 +872,7 @@ hr {
 
 .result-card,
 .search-result .search-results-header {
-  border: 0.0625rem solid #dddddd;
+  border: 0.0625rem solid var(--clr-border-clr);
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
   padding: 1rem;
@@ -894,7 +890,7 @@ hr {
 .result-card .price-col {
   display: grid;
   place-items: center;
-  border-left: 0.0625rem solid #dddddd;
+  border-left: 0.0625rem solid var(--clr-border-clr);
 }
 
 .meta-info {
@@ -902,8 +898,8 @@ hr {
 }
 
 .meta-info .info:not(:last-child) {
-  min-width: 8rem;
-  border-right: 0.0625rem solid #dddddd;
+  padding-right: 1rem;
+  border-right: 0.0625rem solid var(--clr-border-clr);
 }
 
 .badge.theme-accent {

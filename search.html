@@ -148,10 +148,12 @@
 
     <!-- Main -->
     <main>
-      <section class="position-sticky filters" id="filters">
+      <section class="filters" id="filters">
         <div class="container">
           <form action="search.html" method="get" class="form">
-            <div class="row align-items-end bg-white p-3 lg:p-4">
+            <div
+              class="row align-items-center md:align-items-end md:gx-3 flex-column md:flex-row bg-white px-0 py-4 lg:px-4"
+            >
               <div class="col">
                 <div class="field">
                   <label for="trip-type" class="form-label">Trip Type</label>
@@ -242,8 +244,8 @@
                   </select>
                 </div>
               </div>
-              <div class="col">
-                <button type="submit" class="btn btn-solid theme-danger">
+              <div class="col-auto">
+                <button type="submit" class="btn btn-solid theme-danger mt-4 md:mt-0">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   Search
                 </button>
@@ -255,7 +257,7 @@
 
       <section class="main-content">
         <div class="container">
-          <div class="search-result d-flex gap-6">
+          <div class="search-result d-flex flex-column md:flex-row gap-4 md:gap-6">
             <aside class="sidebar py-6 lg:py-8" id="sidebar">
               <h6 class="fg-true-black">
                 <i class="fa-solid fa-filter"></i>Smart Filters
@@ -407,7 +409,7 @@
             </aside>
             <div class="content py-6 lg:py-8">
               <header
-                class="search-results-header d-flex justify-content-between align-items-center gap-4"
+                class="search-results-header d-flex justify-content-between align-items-center flex-column md:flex-row gap-4"
                 id="search-results-header"
               >
                 <div>
@@ -451,7 +453,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -478,7 +480,9 @@
                                 <span class="text-xs">TRV</span>
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
@@ -523,7 +527,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -549,7 +553,7 @@
                               </div>
                             </div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -575,7 +579,9 @@
                                 >
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
@@ -620,7 +626,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -645,7 +651,9 @@
                                 <span class="text-xs">TRV</span>
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
@@ -690,7 +698,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -715,7 +723,9 @@
                                 <span class="text-xs">TRV</span>
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
@@ -763,7 +773,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -788,7 +798,9 @@
                                 <span class="text-xs">BOM</span>
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
@@ -833,7 +845,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -860,7 +872,9 @@
                                 <span class="text-xs">BOM</span>
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
@@ -905,7 +919,7 @@
                           </div>
                           <div>
                             <div
-                              class="meta-info d-flex align-items-center mb-4"
+                              class="meta-info d-flex align-items-center flex-wrap mb-4"
                             >
                               <div class="info">
                                 <span
@@ -932,7 +946,9 @@
                                 <span class="text-xs">BOM</span>
                               </div>
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-2 lg:gap-4"
+                            >
                               <span class="badge theme-accent">Ameneties</span>
                               <span class="badge theme-accent">1 Stop</span>
                               <button
