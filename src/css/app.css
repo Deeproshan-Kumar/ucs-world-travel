@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Xmind:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Xmind:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --font-body: "Inter", sans-serif;
@@ -905,7 +905,7 @@ hr {
 .filters {
   border-bottom: 0.0625rem solid var(--clr-border);
   box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
-  z-index: 10;
+  z-index: 5;
 }
 
 .filters .btn-swap {

@@ -86,7 +86,8 @@
 }
 
 @media only screen and (max-width: 767px) {
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 1.5rem;
   }
 
@@ -138,6 +139,22 @@
     height: auto;
   }
 
+  .result-card .price-col {
+    border-left: 0;
+  }
+
+  .result-card .price-col span {
+    font-size: 1rem;
+    width: 100%;
+    background: #fbedf0;
+    border-left: 0.25rem solid var(--clr-secondary);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+  }
+
   .card.step {
     width: 100%;
   }
@@ -146,8 +163,12 @@
     transform: rotate(90deg);
   }
 
+  .sidebar > .form:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
   .filters .btn-swap {
-    margin-top: 0.25rem;
+    transform: translateY(0.75rem) rotate(90deg);
   }
 
   .sidebar {

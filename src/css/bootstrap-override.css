@@ -135,7 +135,7 @@
 
 /* jQuery Datepicker Customisation */
 .ui-datepicker {
-  z-index: 20;
+  z-index: 5 !important;
 }
 
 .ui-widget.ui-widget-content {
