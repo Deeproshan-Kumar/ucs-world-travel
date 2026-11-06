@@ -43,7 +43,7 @@ a {
   font-family: var(--font-body);
 }
 
-.font-syne {
+.font-xmind {
   font-family: var(--font-heading);
 }
 
@@ -396,7 +396,7 @@ hr {
 }
 
 .discover-world-module .tab-content .field > input::placeholder {
-  color: #aaaaaa;
+  color: var(--clr-text);
 }
 
 .discover-world-module .tab-content .field > input:focus-visible {
@@ -406,7 +406,7 @@ hr {
 .selected-options {
   display: block;
   font-size: 0.75rem;
-  color: #aaaaaa;
+  color: var(--clr-text);
   padding: 0 0.5rem;
 }
 
@@ -427,7 +427,8 @@ hr {
   display: block;
 }
 
-.counter-widget P {
+.counter-widget p {
+  color: var(--clr-pure-black);
   font-size: 0.875rem;
   font-weight: 500;
   font-family: var(--font-heading);
@@ -436,7 +437,7 @@ hr {
 
 .counter-widget p span {
   font-weight: normal;
-  color: #aaaaaa;
+  color: var(--clr-text);
   margin-left: 0.2rem;
 }
 
@@ -517,7 +518,20 @@ hr {
 .masonry-grid > img {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
+  box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.2);
+}
+
+.listings .masonry-grid {
+  background-color: var(--clr-pure-white);
+  padding: 0;
+}
+
+.view-all-offers-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.2);
 }
 
 /* Popular Car Hire Section */
@@ -777,6 +791,13 @@ hr {
 
 /* FAQs Section */
 .faqs {
+  background-color: var(--section-bg-clr);
+  border-top: 0.0625rem solid var(--clr-border);
+  border-bottom: 0.0625rem solid var(--clr-border);
+}
+
+/* Not Found Page */
+.quick-services {
   background-color: var(--section-bg-clr);
   border-top: 0.0625rem solid var(--clr-border);
   border-bottom: 0.0625rem solid var(--clr-border);

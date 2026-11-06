@@ -12,7 +12,7 @@ export const initPreloader = () => {
       setTimeout(() => {
         preloader.classList.add("hide");
         document.body.style.overflow = "";
-      }, 2000);
+      }, 1500);
     },
     { once: true },
   );

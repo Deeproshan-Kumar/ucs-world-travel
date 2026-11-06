@@ -26,8 +26,7 @@
 }
 
 .btn.btn-solid.theme-danger:hover {
-  background: var(--clr-primary);
-  border-color: var(--clr-primary);
+  opacity: 0.75;
 }
 
 .btn.btn-outline.theme-danger {
@@ -56,6 +55,10 @@
 
 .card {
   border: 0.0625rem solid var(--clr-border);
+}
+
+.card.border-0 {
+  border: 0;
 }
 
 .card-header,

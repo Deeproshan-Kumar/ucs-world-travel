@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>404 | Page Not Found | UCS World Tour and Travels</title>
+    <title>404 - Page Not Found | UCS World Tour and Travels</title>
     <!-- jQuery UI CSS -->
     <link
       rel="stylesheet"
@@ -44,10 +44,10 @@
           class="img-fluid"
         />
         <div class="d-flex flex-column align-items-center p-3">
-          <span class="fg-true-white text-sm font-syne"
+          <span class="fg-true-white text-sm font-xmind"
             >World Tour &amp; Travels</span
           >
-          <span class="fg-true-white text-xs font-syne">LOADING...</span>
+          <span class="fg-true-white text-xs font-xmind">LOADING...</span>
         </div>
       </div>
     </div>
@@ -100,14 +100,9 @@
               ></button>
             </div>
             <div class="drawer-body mb-2 md:mb-0">
-              <ul class="nav navbar-nav md:mx-auto">
+              <ul class="nav navbar-nav me-auto">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >Home</a
-                  >
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
@@ -151,19 +146,238 @@
 
     <!-- Main -->
     <main>
+      <!-- Hero Not Found Section -->
       <section class="section not-found" id="not-found">
         <div class="container">
+          <div
+            class="row align-items-center gy-6 md:gy-0 justify-content-between"
+          >
+            <div class="col-12 md:col-6">
+              <span class="badge theme-danger mb-3">
+                <i class="fa-solid fa-triangle-exclamation me-1"></i> ERROR 404
+              </span>
+              <h1 class="h1 mb-3">
+                Lost in <span class="fg-accent">Transit?</span>
+              </h1>
+              <p class="h5 mb-3">
+                Oops! The destination you are looking for doesn't exist or has
+                been relocated.
+              </p>
+              <p class="text-sm mb-5">
+                It looks like this route hasn't been charted yet. Don't worry —
+                UCS World Tour and Travels is here to help you get back on track
+                with seamless booking options and 24/7 travel assistance.
+              </p>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a
+                  href="index.html"
+                  class="btn btn-solid theme-danger px-4 py-3"
+                >
+                  <i class="fa-solid fa-house me-2"></i>Back to Homepage
+                </a>
+                <a
+                  href="services.html"
+                  class="btn btn-outline theme-danger px-4 py-3"
+                >
+                  <i class="fa-solid fa-compass me-2"></i>Explore Services
+                </a>
+                <a href="contact.html" class="btn btn-ghost px-2 py-3">
+                  <i class="fa-solid fa-headset me-2"></i>Contact Support
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 md:col-5">
+              <div
+                class="card border rounded-4 shadow-sm bg-light text-center p-5 position-relative overflow-hidden"
+              >
+                <div
+                  class="display-1 fw-bold text-danger opacity-25 user-select-none mb-0"
+                  style="font-size: 7rem; line-height: 1"
+                >
+                  404
+                </div>
+                <div
+                  class="position-absolute top-50 start-50 translate-middle w-100 px-4"
+                >
+                  <div class="icon mx-auto mb-3">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </div>
+                  <h3 class="h4 mb-1">Route Not Found</h3>
+                  <p class="text-xs">
+                    Check the URL or pick a destination below
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Services Quick Navigation -->
+      <section class="section quick-services" id="quick-services">
+        <div class="container">
           <div class="section-header text-center mb-5 xl:pb-4">
-            <h3 class="h6">Oops! Something went wrong.</h3>
-            <h2>404 | Page <span class="fg-accent">Not Found!</span></h2>
-            <p class="mb-0">
-              Booking your next journey is simple with UCS World Tour and
-              Travels.
+            <h3 class="h6">WHERE WOULD YOU LIKE TO GO?</h3>
+            <h2>
+              Explore Popular Travel <span class="fg-accent">Services</span>
+            </h2>
+            <p class="text-sm mb-0">
+              Pick a travel category below to quickly find your tickets, cabs,
+              or holiday packages.
             </p>
           </div>
-          <div class="row">
-            <div class="col-12 lg:col-6"></div>
-            <div class="col-12 lg:col-6"></div>
+
+          <div class="row gy-6 sm:gy-8 lg:gy-0">
+            <!-- Flight Booking Card -->
+            <div class="col-12 sm:col-6 lg:col-3">
+              <article
+                class="card h-100 border text-center p-4 md:p-5 rounded-4 shadow-sm"
+              >
+                <div
+                  class="card-header border-0 bg-transparent align-items-center p-0 mb-3"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-plane-up"></i>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <h4 class="h5">Flight Booking</h4>
+                  <p class="text-sm">
+                    Domestic and international flight tickets with instant
+                    confirmation.
+                  </p>
+                  <a
+                    href="flights.html"
+                    class="btn btn-ghost fw-semibold text-xs align-self-center"
+                  >
+                    Book Flights
+                    <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Bus Booking Card -->
+            <div class="col-12 sm:col-6 lg:col-3">
+              <article
+                class="card h-100 border text-center p-4 md:p-5 rounded-4 shadow-sm"
+              >
+                <div
+                  class="card-header border-0 bg-transparent align-items-center p-0 mb-3"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-bus"></i>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <h4 class="h5">Bus Booking</h4>
+                  <p class="text-sm">
+                    AC Volvo, luxury sleeper, and intercity buses on thousands
+                    of routes.
+                  </p>
+                  <a
+                    href="buses.html"
+                    class="btn btn-ghost fw-semibold text-xs align-self-center"
+                  >
+                    Book Buses <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Car Rental Card -->
+            <div class="col-12 sm:col-6 lg:col-3">
+              <article
+                class="card h-100 border text-center p-4 md:p-5 rounded-4 shadow-sm"
+              >
+                <div
+                  class="card-header border-0 bg-transparent align-items-center p-0 mb-3"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <h4 class="h5">Car Rental &amp; Cabs</h4>
+                  <p class="text-sm">
+                    Airport transfers, outstation cabs, and local sightseeing
+                    rides.
+                  </p>
+                  <a href="cars.html" class="btn btn-ghost fw-semibold text-xs align-self-center">
+                    Rent a Car <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Holiday Packages Card -->
+            <div class="col-12 sm:col-6 lg:col-3">
+              <article
+                class="card h-100 border text-center p-4 md:p-5 rounded-4 shadow-sm"
+              >
+                <div
+                  class="card-header border-0 bg-transparent align-items-center p-0 mb-3"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <h4 class="h5">Holiday Tours</h4>
+                  <p class="text-sm">
+                    Custom packages for Thailand, Nepal, Cambodia, and top
+                    destinations.
+                  </p>
+                  <a
+                    href="holidays.html"
+                    class="btn btn-ghost fw-semibold text-xs align-self-center"
+                  >
+                    View Holidays
+                    <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Assistance Banner -->
+      <section class="section assistance-banner" id="assistance-banner">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-12 md:col-8 text-center text-md-start">
+              <div
+                class="d-flex flex-column flex-md-row align-items-center gap-3"
+              >
+                <div class="icon shrink-0">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-1">
+                    Still Can't Find What You're Looking For?
+                  </h3>
+                  <p class="text-sm">
+                    Our dedicated 24/7 customer care team is always on hand to
+                    assist with your bookings and inquiries.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 md:col-4 text-center text-md-end">
+              <div
+                class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-end"
+              >
+                <a href="tel:+918853240990" class="btn btn-solid theme-danger">
+                  <i class="fa-solid fa-phone me-2"></i>Call Support
+                </a>
+                <a href="faq.html" class="btn btn-outline theme-danger">
+                  <i class="fa-solid fa-circle-question me-2"></i>Visit FAQ
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -215,22 +429,29 @@
             <h5 class="fg-true-white">Company</h5>
             <ul class="list-unstyled space-y-4 mb-0">
               <li>
-                <a href="index.html" class="footer-link font-syne text-sm"
+                <a href="index.html" class="footer-link font-xmind text-sm"
                   >Home</a
                 >
               </li>
               <li>
-                <a href="about.html" class="footer-link font-syne text-sm"
+                <a href="about.html" class="footer-link font-xmind text-sm"
                   >About Us</a
                 >
               </li>
               <li>
-                <a href="contact.html" class="footer-link font-syne text-sm"
+                <a href="services.html" class="footer-link font-xmind text-sm"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-link font-xmind text-sm"
                   >Contact Us</a
                 >
               </li>
               <li>
-                <a href="faq.html" class="footer-link font-syne text-sm">FAQ</a>
+                <a href="faq.html" class="footer-link font-xmind text-sm"
+                  >FAQ</a
+                >
               </li>
             </ul>
           </div>
@@ -287,18 +508,18 @@
           &copy; 2026 UCS All rights reserved.
         </p>
         <p class="text-sm text-center md:text-start space-x-3 mb-0">
-          <a href="support-ticket.html" class="footer-link font-syne text-sm"
+          <a href="support-ticket.html" class="footer-link font-xmind text-sm"
             >Support Ticket</a
           >
-          <a href="privacy-policy.html" class="footer-link font-syne text-sm"
+          <a href="privacy-policy.html" class="footer-link font-xmind text-sm"
             >Privacy Policy</a
           >
           <a
             href="terms-and-conditions.html"
-            class="footer-link font-syne text-sm"
+            class="footer-link font-xmind text-sm"
             >Terms and Conditions</a
           >
-          <a href="refund-policy.html" class="footer-link font-syne text-sm"
+          <a href="refund-policy.html" class="footer-link font-xmind text-sm"
             >Refund Policy</a
           >
         </p>
