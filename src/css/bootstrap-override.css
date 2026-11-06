@@ -10,7 +10,7 @@
 }
 
 .btn:hover i {
-  transform: translateX(0.25rem);
+  transform: scale(0.85);
 }
 
 .btn-ghost {
@@ -19,6 +19,15 @@
   color: var(--clr-secondary);
   background: transparent;
   text-decoration: none;
+}
+
+.btn.btn-solid.theme-danger {
+  color: var(--clr-pure-white);
+}
+
+.btn.btn-solid.theme-danger:hover {
+  background: var(--clr-primary);
+  border-color: var(--clr-primary);
 }
 
 .fg-accent {
@@ -34,13 +43,13 @@
 }
 
 .card {
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
 }
 
 .card-header,
 .card-footer {
   background: var(--clr-pure-white);
-  border-color: var(--clr-border-clr);
+  border-color: var(--clr-border);
 }
 
 .nav-link,
@@ -63,11 +72,12 @@
 .accordion-item {
   font-weight: 500;
   border: 0;
+  border-radius: 0.5rem;
 }
 
 .accordion-header {
-  border-radius: 0.5rem;
   color: var(--clr-primary);
+  border-radius: 0.5rem;
   border: 0.0625rem solid #fbedf0;
 }
 
@@ -107,7 +117,7 @@
 }
 
 .alert {
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
   border-left: 0.25rem solid var(--clr-secondary);
 }
 
@@ -117,7 +127,7 @@
 }
 
 .ui-widget.ui-widget-content {
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -129,7 +139,7 @@
   font-size: 0.875rem;
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
 }
 
 .ui-datepicker .ui-datepicker-title {

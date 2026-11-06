@@ -73,12 +73,6 @@
     font-size: 0.75rem;
   }
 
-  .filters .btn-swap {
-    min-height: 1.75rem;
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
-  }
-
   .footer h5 {
     margin-bottom: 1rem;
   }
@@ -109,9 +103,23 @@
     font-size: 1.875rem;
   }
 
+  .discover-world-module .nav-pills.level-1 {
+    top: 0;
+  }
+
+  .discover-world-module .nav-pills.level-1 .nav-link {
+    min-width: 4rem;
+    min-height: 3.25rem;
+  }
+
+  .discover-world-module .nav-pills.level-1 .nav-link span {
+    font-size: 0.75rem;
+  }
+
   .discover-world-module #pills-level-1-content {
-    padding: 1.25rem;
-    padding-top: 4rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    margin-top: -2rem;
   }
 
   .featured-destinations article,
@@ -133,7 +141,7 @@
 
   .sidebar {
     border-right: 0;
-    border-bottom: 0.0625rem solid var(--clr-border-clr);
+    border-bottom: 0.0625rem solid var(--clr-border);
   }
 
   .footer h5 {

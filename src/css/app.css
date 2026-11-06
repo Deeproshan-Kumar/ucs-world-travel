@@ -8,8 +8,9 @@
   --clr-hero-tab: #051036;
   --clr-pure-white: #ffffff;
   --clr-pure-black: #000000;
-  --clr-border-clr: #eaeaea;
+  --clr-border: #eaeaea;
   --clr-text: #697488;
+  --section-bg-clr: #fff3f7;
 }
 
 body {
@@ -32,14 +33,20 @@ h6,
 .h6 {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: var(--clr-primary);
+  color: var(--clr-pure-black);
 }
 
 h1,
 .h1,
 h2,
-.h2 {
+.h2,
+h3,
+.h3 {
   font-weight: 700;
+}
+
+a {
+  color: inherit;
 }
 
 .font-inter {
@@ -74,7 +81,7 @@ P:last-child {
 }
 
 hr {
-  border-color: var(--clr-border-clr);
+  border-color: var(--clr-border);
 }
 
 .section {
@@ -209,7 +216,7 @@ hr {
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 0.0625rem solid var(--clr-border-clr);
+  border-bottom: 0.0625rem solid var(--clr-border);
 }
 
 .navbar .register-btn {
@@ -249,14 +256,14 @@ hr {
 }
 
 .hero .tagline {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--clr-secondary);
   display: inline-block;
   border-radius: 1rem;
   padding: 0.25rem 0.5rem;
   background: #fbedf0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-title {
@@ -276,12 +283,9 @@ hr {
 }
 
 .discover-world-module .nav-pills.level-1 {
-  position: relative;
-  top: 3rem;
   background-color: transparent;
   flex-wrap: nowrap;
   gap: 0.5rem;
-  overflow-x: auto;
   border-radius: 0;
 }
 
@@ -296,6 +300,7 @@ hr {
   background-color: var(--clr-pure-white);
   color: var(--clr-hero-tab);
   box-shadow: rgba(0, 0, 0, 0.15) 0 0 1rem;
+  border: 0.0625rem solid var(--clr-border);
   font-size: 1.25rem;
 }
 
@@ -306,6 +311,7 @@ hr {
 .discover-world-module .nav-pills.level-1 .nav-link.active {
   background-color: var(--clr-secondary);
   color: var(--clr-pure-white);
+  border: 0.0625rem solid var(--clr-secondary);
 }
 
 .discover-world-module .nav-pills.level-1 .nav-link span {
@@ -315,8 +321,9 @@ hr {
 }
 
 .discover-world-module #pills-level-1-content {
-  padding: 2rem;
-  padding-top: 5rem;
+  margin-top: -3rem;
+  padding: 1.5rem;
+  padding-top: 4.5rem;
   border-radius: 0.25rem;
   box-shadow: rgba(5, 16, 54, 0.07) 0 1.25rem 2.5rem 0;
 }
@@ -331,7 +338,7 @@ hr {
 .discover-world-module .nav-pills.level-2 .nav-link {
   user-select: none;
   font-size: 0.75rem;
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid var(--clr-border);
   border-radius: 1rem;
   transition:
     background-color 0.2s,
@@ -365,7 +372,7 @@ hr {
 }
 
 .discover-world-module .tab-content .fields {
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
   border-radius: 0.25rem;
 }
 
@@ -376,7 +383,7 @@ hr {
 }
 
 .discover-world-module .tab-content .field:not(:last-child) {
-  border-right: 0.0625rem solid var(--clr-border-clr);
+  border-right: 0.0625rem solid var(--clr-border);
 }
 
 .discover-world-module .tab-content .field > label,
@@ -414,14 +421,16 @@ hr {
 }
 
 .counter-widget {
-  min-width: 20rem;
+  min-width: 100%;
   position: absolute;
   top: auto;
+  left: 0;
   background: var(--clr-pure-white);
   padding: 0.625rem;
   border-radius: 0.25rem;
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
   display: none;
+  z-index: 1;
 }
 
 .field.active .counter-widget {
@@ -445,7 +454,7 @@ hr {
   position: relative;
   left: -1.25rem;
   border-radius: 50%;
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
   padding: 0.5rem;
   aspect-ratio: 1 / 1;
   background: var(--clr-pure-white);
@@ -500,8 +509,18 @@ hr {
   font-size: 0.9375rem;
 }
 
-/* Special Offers */
+/* Special Offers Section */
+.special-offers {
+  background-color: var(--section-bg-clr);
+  border-top: 0.0625rem solid var(--clr-border);
+  border-bottom: 0.0625rem solid var(--clr-border);
+}
+
 .masonry-grid {
+  background: var(--clr-primary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
   column-count: 3;
 }
 
@@ -511,7 +530,7 @@ hr {
   box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
 }
 
-/* Popular Car Hire */
+/* Popular Car Hire Section */
 .popular-car-hire .card-header {
   border-radius: 0.5rem;
   overflow: hidden;
@@ -520,10 +539,6 @@ hr {
 .popular-car-hire .card-header img,
 .most-popular-tours .card-header img {
   aspect-ratio: 16 / 9;
-}
-
-.popular-car-hire .card-title {
-  text-transform: uppercase;
 }
 
 .popular-car-hire .card,
@@ -540,7 +555,13 @@ hr {
   transform: scale(1.05);
 }
 
-/* Why Choose Us */
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: var(--section-bg-clr);
+  border-top: 0.0625rem solid var(--clr-border);
+  border-bottom: 0.0625rem solid var(--clr-border);
+}
+
 .why-choose-us .card {
   transition: 200ms all ease-in-out;
 }
@@ -550,7 +571,7 @@ hr {
   border-color: var(--clr-secondary);
 }
 
-/* Most Popular Tours */
+/* Most Popular Tours Section */
 .most-popular-tours .card {
   border: 0;
 }
@@ -569,24 +590,64 @@ hr {
 }
 
 .most-popular-tours .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: 300ms all ease-in-out;
+}
+
+.most-popular-tours .card-title i {
+  font-size: 1rem;
+  transform: rotate(-45deg);
 }
 
 .most-popular-tours .card:hover .card-title {
   color: var(--clr-secondary);
 }
 
-/* Services */
+/* Services Section */
+.home.services {
+  background-color: var(--clr-primary);
+  border-top: 0.0625rem solid var(--clr-border);
+  border-bottom: 0.0625rem solid var(--clr-border);
+}
+
 .services .card {
+  position: relative;
+  border: 0;
+  overflow: hidden;
   transition: 300ms all ease-in-out;
+}
+
+.services .card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.125rem;
+  width: 100%;
+  background: var(--clr-secondary);
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
 }
 
 .services .card:hover {
   transform: translateY(-0.25rem);
-  border-color: var(--clr-secondary);
 }
 
-/* Featured Destinations */
+.services .card .card-header .icon {
+  transition: all 300ms ease-in-out;
+}
+
+.services .card:hover .card-header .icon {
+  color: var(--clr-pure-white);
+  background-color: var(--clr-secondary);
+}
+
+.services .card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Featured Destinations Section */
 .featured-destinations article {
   position: relative;
   height: 16rem;
@@ -647,7 +708,26 @@ hr {
   margin-bottom: 0;
 }
 
-/* How It Works */
+.ucs-link {
+  bottom: 1rem;
+  right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  z-index: 1;
+}
+
+.ucs-link i {
+  color: var(--clr-pure-white);
+  transform: rotate(-45deg);
+}
+
+/* How It Works Section */
+.how-it-works {
+  background-color: var(--section-bg-clr);
+  border-top: 0.0625rem solid var(--clr-border);
+  border-bottom: 0.0625rem solid var(--clr-border);
+}
+
 .card.step {
   transition: all 300ms ease-in-out;
 }
@@ -690,6 +770,13 @@ hr {
   font-size: 0.875rem;
   font-weight: 300;
   opacity: 80%;
+}
+
+/* FAQs Section */
+.faqs {
+  background-color: var(--section-bg-clr);
+  border-top: 0.0625rem solid var(--clr-border);
+  border-bottom: 0.0625rem solid var(--clr-border);
 }
 
 /* About Page */
@@ -813,24 +900,35 @@ hr {
 
 /* Search Result Page */
 .filters {
-  border-bottom: 0.0625rem solid var(--clr-border-clr);
+  border-bottom: 0.0625rem solid var(--clr-border);
   box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
   z-index: 10;
 }
 
 .filters .btn-swap {
+  min-height: 1.75rem;
+  font-size: 0.75rem;
   border-radius: 50%;
   aspect-ratio: 1/1;
   background: var(--clr-primary);
   color: var(--clr-pure-white);
+  margin-bottom: 0.25rem;
   padding: 0;
+}
+
+.filters .btn-swap:hover {
+  background: var(--clr-secondary);
+}
+
+.filters .btn-swap:hover i {
+  transform: translateX(0);
 }
 
 .sidebar {
   min-width: 15rem;
   flex: 1;
   background: var(--clr-pure-white);
-  border-right: 0.0625rem solid var(--clr-border-clr);
+  border-right: 0.0625rem solid var(--clr-border);
 }
 
 .sidebar > .form:not(:last-child) {
@@ -857,7 +955,7 @@ hr {
 
 .search-results-header .sorting select {
   font-size: 0.875rem;
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
 }
@@ -872,7 +970,7 @@ hr {
 
 .result-card,
 .search-result .search-results-header {
-  border: 0.0625rem solid var(--clr-border-clr);
+  border: 0.0625rem solid var(--clr-border);
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1.25rem rgba(7, 18, 61, 0.1);
   padding: 1rem;
@@ -890,7 +988,7 @@ hr {
 .result-card .price-col {
   display: grid;
   place-items: center;
-  border-left: 0.0625rem solid var(--clr-border-clr);
+  border-left: 0.0625rem solid var(--clr-border);
 }
 
 .meta-info {
@@ -899,7 +997,7 @@ hr {
 
 .meta-info .info:not(:last-child) {
   padding-right: 1rem;
-  border-right: 0.0625rem solid var(--clr-border-clr);
+  border-right: 0.0625rem solid var(--clr-border);
 }
 
 .badge.theme-accent {
