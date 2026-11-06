@@ -614,7 +614,6 @@ hr {
 
 .services .card {
   position: relative;
-  border: 0;
   overflow: hidden;
   transition: 300ms all ease-in-out;
 }
@@ -641,6 +640,11 @@ hr {
 .services .card:hover .card-header .icon {
   color: var(--clr-pure-white);
   background-color: var(--clr-secondary);
+}
+
+.services .card .card-header .badge {
+  position: absolute;
+  right: 1rem;
 }
 
 .services .card:hover::after {
@@ -746,6 +750,15 @@ hr {
 .card.step:hover {
   border: 0.0625rem solid var(--clr-secondary);
   transform: translateY(-0.25rem);
+}
+
+.how-services-works .card .card-header {
+  position: relative;
+}
+
+.how-services-works .card .card-header .badge {
+  position: absolute;
+  right: 0;
 }
 
 /* CTA */

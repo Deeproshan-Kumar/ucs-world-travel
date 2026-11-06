@@ -30,6 +30,18 @@
   border-color: var(--clr-primary);
 }
 
+.btn.btn-outline.theme-danger {
+  color: var(--clr-secondary);
+}
+
+.btn.btn-outline.theme-danger:hover {
+  color: var(--clr-pure-white);
+}
+
+.border {
+  border-color: var(--clr-border);
+}
+
 .fg-accent {
   color: var(--clr-secondary) !important;
 }
